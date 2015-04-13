@@ -42,7 +42,6 @@ main() {
 	int i = 0;
 	for (int i = 0; i < 7; ++i) //each shape
 	{
-
 		putchar(swag[i].name);
 		for (int orientation = 0; orientation < swag[i].orientation; ++orientation) // each orientation
 		{
