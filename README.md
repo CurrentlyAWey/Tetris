@@ -10,9 +10,10 @@ GAL Programming contains JEDEC files for programming GAL chips for specialized u
 		without having to order specialized chips with inconvenient pinouts, etc.
 
 Tetromino Generator:
+
 	BoolStr contains functions for manipulating 8bit arrays of booleans
 	
-	input txt contains each shape in various orientations
+	input.txt contains each shape in various orientations
 		Order of Significance:
 			3 MSB address the Shape
 			2 bits address the orientation
@@ -24,15 +25,20 @@ Tetromino Generator:
 			each block contains 1 orientation of each shape, making 
 				7shapes x 4orientations x 4 rows = 112 rows.
 	
-	shapeTest prints out all the possible offsets of each shape's orientations
+	shapeTest.c prints out all the possible offsets of each shape's orientations
 		The output from shapeTest is redirected into Swag.txt. 
 		The debugging output is cleaned up, and used as input to bintext2bin
 
-	bintext2bin converts input from a text file containing 8bit rows 
+	bintext2bin.c converts input from a text file containing 8bit rows 
 		into a bin file with equivalent information. (output.bin)
 
-	input txt --> Swag.txt --> output.bin --> EEPROM
+	input.txt --> Swag.txt --> output.bin --> EEPROM
 
 GAL Programming:
-	4bitswitch contains CUPL for switching between 4 sets of 2 inputs with 1 address pin.
-	8bitAndNor contains CUPL for an 8 input AND, 8 input OR, and buffers 4 inputs for wiring convenience.
+
+	4bitswitch.PLD contains CUPL for switching between 4 sets of 2 inputs with 1 address pin.
+
+	8bitAndNor.PLD contains CUPL for an 8 input AND, 8 input OR, and buffers 4 inputs for wiring convenience.
+
+
+PLD files were compiled using WinCUPL on JLAB computer (Junior 04)
