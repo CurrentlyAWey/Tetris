@@ -11,8 +11,10 @@ Device 	g22v10;
 /**Inputs**/
 
 Pin 1 = ADD;
+/* 
 Pin 2 = nc;
 Pin 3 = nc;
+*/
 Pin 4 = A0;
 Pin 5 = A1;
 Pin 6 = A2;
@@ -26,17 +28,23 @@ Pin 11 = B3;
 
 /**Outputs**/
 
+/*
 Pin 13 = nc;
 Pin 14 = nc;
 Pin 15 = nc;
 Pin 16 = nc;
 Pin 17 = nc;
+*/
+
 Pin 18 = Y3;
 Pin 19 = Y2;
 Pin 20 = Y1;
 Pin 21 = Y0;
+
+/*
 Pin 22 = nc;
 Pin 23 = nc; 
+*/
 
 APPEND Y0 = A0 & !ADD;
 APPEND Y0 = B0 & ADD;
