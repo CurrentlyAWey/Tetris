@@ -10,24 +10,25 @@ Device 	g16v8;
 
 /**Inputs**/
 
+/*
 Pin 1 = nc;
 Pin 2 = nc;
 Pin 3 = nc;
 Pin 4 = nc;
-Pin 5 = I7;
-Pin 6 = I6;
-Pin 7 = I5;
-Pin 8 = I4;
-Pin 9 = I3;
-Pin 11 = I0; 
+*/
+
+Pin 5 = I4;//TODO: match these with the actual Inputs; Pin 5 should = I4
+Pin 6 = I5;
+Pin 7 = I6;
+Pin 8 = I7;
+Pin 9 = I0;
+Pin 11 = I2; 
 Pin 12 = I1;
-Pin 13 = I2;
+Pin 13 = I0;
 
-
-nc nc nc AND  GND
-  NOR AND VCC
 
 /**Outputs**/
+
 Pin 14 = O4;
 Pin 15 = O5;
 Pin 16 = O6;
@@ -38,7 +39,7 @@ Pin 19 = AND;
 AND = [I7, I6, I5, I4, I3, I0, I1, I2]:&;
 OR = [I7, I6, I5, I4, I3, I0, I1, I2]:#;
 
-O4 = I4;
-O5 = I5;
-O6 = I6;
-O7 = I7;
+O4 = I7;
+O5 = I6;
+O6 = I5;
+O7 = I4;
