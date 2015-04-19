@@ -8,10 +8,6 @@
 
 #define BUFSIZE 256
 
-//TODO:
-//		Load from input file?
-
-
 main() {
 
 	char	buf[BUFSIZE];
@@ -117,29 +113,7 @@ main() {
 			sha ++;
 		}
 		numwritten++;
-/*
-		uc = 0;
-		for(i=0; i < len; i++)
-		{
-			uc = uc << 1;
-			if( buf[i] == '0' )	// 0 already shifted in
-				;
-			else if( buf[i] == '1' )
-				uc |= 1;	// Make lsb 1
-			else	// Error if char is not a '0' or a '1'
-			{
-				printf("Invalid character at LINE #%d ('%s')\n",
-					linenum, buf);
-				exit(1);
-			}
-		}
 
-		fputc(uc, fpout);	// Write byte to (binary) output file
-		numwritten++;
-
-		// Inform user of progress
-		printf("Line #%d: 'Writing '%s' as '%02X'\n", linenum, buf, uc);
-*/
 	}
 
 	// Close files
@@ -149,53 +123,7 @@ main() {
 	
 	printf("\n----------------------\n");
 	printf("\nDone.\n");
-//	printf("Number of bytes written to '%s': %d\n", outfile, numwritten);
-//	printf("Number of blank lines: %d\n", numblank);
 
-//	exit(0);
-
-/*
-	//initialize all arrays
-	int i = 0;
-	for (int i = 0; i < 7; ++i) //each shape
-	{
-		putchar(swag[i].name);
-		for (int orientation = 0; orientation < swag[i].orientation; ++orientation) // each orientation
-		{
-			switch (orientation) {
-			case 0:
-				printf("up\n");
-				break;
-			case 1:
-				printf("right\n");
-				break;
-			case 2:
-				printf("down\n");
-				break;
-			case 3:
-				printf("left\n");
-				break;
-			}
-			for (int row = 0; row < swag[i].row; ++row) // each row
-			{
-				int num;
-				char string[8];
-				scanf("%s", string);
-				for (int col = 0; col < swag[i].col; ++col)	//TODO :take input from the file
-				{
-					if ((string[col] == 49) & (col < 4))
-					{
-						swag[i].up[orientation][row][col] = 1;
-					}
-					else
-					{
-						swag[i].up[orientation][row][col] = 0;
-					}	
-				}
-			}
-		}
-	}
-*/
 	for (int sh = 0; sh < 7; ++sh)
 	{
 		p3bs(swag[sh].up);
@@ -205,20 +133,6 @@ main() {
 			p3bs(swag[sh].up);
 		}
 	}
-
+	
 	printf("number of rows written : %d\n" , numwritten);
-
-	//print out all the shapes (kms)
-
-	/*
-
-	for (int i = 0; i < 7; ++i)
-	{
-		//prints shape name
-		putchar(swag[i].name);
-		putchar('\n');
-		p3bs(swag[i].up);
-	}
-
-	*/
 }
