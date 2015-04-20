@@ -15,7 +15,7 @@ void p2bs(bool arr[][8]) {
 	//print 2D Bitstring
 	for (int row = 0; row < 4; ++row)
 		p1bs(arr[row]);
-	putchar('\n');
+	//putchar('\n');
 }
 
 void p3bs(bool arr[][4][8]) {
