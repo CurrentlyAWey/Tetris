@@ -1,0 +1,156 @@
+%SIGNAL
+PIN   1 =  A1 
+PIN   2 =  A2 
+PIN   3 =  A3 
+PIN   4 =  A4 
+PIN   5 =  B1 
+PIN   6 =  B2 
+PIN   7 =  B3 
+PIN   8 =  B4 
+PIN  16 =  Inter1 
+PIN  17 =  Inter2 
+PIN  18 =  Inter3 
+PIN  15 =  Inter4 
+PIN  13 = !NotOverlap 
+PIN  14 =  Overlap 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+Inter1 =>
+    A1 & A2 & B1 & B2 & !B3 & !B4
+  # !A1 & A2 & !B1 & B2 & !B3 & !B4
+  # A1 & !A2 & B1 & !B2 & !B3 & !B4
+  # !A1 & !A2 & !B1 & !B2 & !B3 & !B4
+  # !A1 & A2 & A3 & !B1 & B2 & !B3
+  # !A1 & A2 & A3 & !B1 & B2 & !B4
+
+Inter2 =>
+    A1 & !A2 & A3 & B1 & !B2 & !B3
+  # A1 & !A2 & A3 & B1 & !B2 & !B4
+  # !A1 & !A2 & A3 & !B1 & !B2 & !B3
+  # !A1 & !A2 & A3 & !B1 & !B2 & !B4
+  # A1 & A2 & !A3 & B1 & !B2 & B3
+  # !A1 & A2 & !A3 & !B1 & !B2 & B3
+
+Inter3 =>
+    A1 & !A2 & !A3 & !B1 & B2 & B3
+  # !A1 & A2 & A4 & !B1 & B2 & !B3
+  # A1 & !A2 & A4 & B1 & !B2 & !B3
+  # !A1 & !A2 & A4 & !B1 & !B2 & !B3
+  # !A1 & A2 & A3 & A4 & !B1 & B2
+  # A1 & !A2 & A3 & A4 & B1 & !B2
+
+Inter4 =>
+    !A1 & !A2 & A3 & A4 & !B1 & !B2
+  # A1 & A2 & !A4 & B1 & !B2 & B3 & B4
+  # !A1 & A2 & !A4 & !B1 & !B2 & B3 & B4
+  # A1 & !A2 & !A4 & !B1 & B2 & B3 & B4
+  # A1 & A2 & !A3 & !A4 & B1 & !B2 & B4
+  # !A1 & A2 & !A3 & !A4 & !B1 & !B2 & B4
+
+NotOverlap =>
+    Overlap
+
+O1 =>
+    A1 & A2 & B1 & B2 & !B3 & !B4
+
+O2 =>
+    !A1 & A2 & !B1 & B2 & !B3 & !B4
+
+O3 =>
+    A1 & !A2 & B1 & !B2 & !B3 & !B4
+
+O4 =>
+    !A1 & !A2 & !B1 & !B2 & !B3 & !B4
+
+O5 =>
+    !A1 & A2 & A3 & !B1 & B2 & !B3
+
+O6 =>
+    !A1 & A2 & A3 & !B1 & B2 & !B4
+
+O7 =>
+    A1 & !A2 & A3 & B1 & !B2 & !B3
+
+O8 =>
+    A1 & !A2 & A3 & B1 & !B2 & !B4
+
+O9 =>
+    !A1 & !A2 & A3 & !B1 & !B2 & !B3
+
+Oa =>
+    !A1 & !A2 & A3 & !B1 & !B2 & !B4
+
+Ob =>
+    A1 & A2 & !A3 & B1 & !B2 & B3
+
+Oc =>
+    !A1 & A2 & !A3 & !B1 & !B2 & B3
+
+Od =>
+    A1 & !A2 & !A3 & !B1 & B2 & B3
+
+Oe =>
+    !A1 & A2 & A4 & !B1 & B2 & !B3
+
+Of =>
+    A1 & !A2 & A4 & B1 & !B2 & !B3
+
+Og =>
+    !A1 & !A2 & A4 & !B1 & !B2 & !B3
+
+Oh =>
+    !A1 & A2 & A3 & A4 & !B1 & B2
+
+Oi =>
+    A1 & !A2 & A3 & A4 & B1 & !B2
+
+Oj =>
+    !A1 & !A2 & A3 & A4 & !B1 & !B2
+
+Ok =>
+    A1 & A2 & !A4 & B1 & !B2 & B3 & B4
+
+Ol =>
+    !A1 & A2 & !A4 & !B1 & !B2 & B3 & B4
+
+Om =>
+    A1 & !A2 & !A4 & !B1 & B2 & B3 & B4
+
+On =>
+    A1 & A2 & !A3 & !A4 & B1 & !B2 & B4
+
+Oo =>
+    !A1 & A2 & !A3 & !A4 & !B1 & !B2 & B4
+
+Op =>
+    A1 & !A2 & !A3 & !A4 & !B1 & B2 & B4
+
+Overlap =>
+    Inter1
+  # Inter2
+  # Inter3
+  # Inter4
+
+Inter1.oe  =>
+    1 
+
+Inter2.oe  =>
+    1 
+
+Inter3.oe  =>
+    1 
+
+Inter4.oe  =>
+    1 
+
+NotOverlap.oe  =>
+    1 
+
+Overlap.oe  =>
+    1 
+
+%END
