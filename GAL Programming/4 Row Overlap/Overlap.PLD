@@ -1,0 +1,76 @@
+Name 	Overlap;
+Partno 	01;
+Date 	4/24/2015;
+Rev 	01;
+Designer 	Arnold Wey;
+Company 	CU Later;
+Assembly 	None;
+Location 	None;
+Device 	g16v8;
+
+/**Inputs**/
+
+
+Pin 1 = A1;
+Pin 2 = A2;
+Pin 3 = A3;
+Pin 4 = A4;
+
+Pin 5 = B1;
+Pin 6 = B2;
+Pin 7 = B3;
+Pin 8 = B4;
+
+/*
+
+Pin 9 = I0;
+Pin 11 = I2; 
+Pin 12 = I1;
+Pin 13 = I0;
+
+*/
+
+/**Outputs**/
+
+/*
+Pin 14 = O4;
+Pin 15 = O5;
+Pin 16 = O6;
+*/
+
+Pin 18 = !Overlap;
+Pin 19 = Overlap;
+Pin 20 = AND;
+
+
+Overlap = B1 & B2 & !B3 & !B4 & A1 & A2;
+APPEND Overlap = !B1 & B2  & !B3 & !B4 & !A1 & A2;
+APPEND Overlap = B1  & !B2 & !B3 & !B4 & A1  & !A2;
+APPEND Overlap = !B1 & !B2 & !B3 & !B4 & !A1 & !A2;
+APPEND Overlap = !B1 & B2  & !B3 & !A1 & A2  & A3;
+APPEND Overlap = !B1 & B2  & !B4 & !A1 & A2  & A3;
+APPEND Overlap = B1  & !B2 & !B3 & A1  & !A2 & A3;
+APPEND Overlap = B1  & !B2 & !B4 & A1  & !A2 & A3;
+APPEND Overlap = !B1 & !B2 & !B3 & !A1 & !A2 & A3;
+APPEND Overlap = !B1 & !B2 & !B4 & !A1 & !A2 & A3;
+APPEND Overlap = B1  & !B2 & B3  & A1  & A2  & !A3;
+APPEND Overlap = !B1 & !B2 & B3  & !A1 & A2  & !A3;
+APPEND Overlap = !B1 & B2  & B3  & A1  & !A2 & !A3;
+APPEND Overlap = !B1 & B2  & !B3 & !A1 & A2  & A4;
+APPEND Overlap = B1  & !B2 & !B3 & A1  & !A2 & A4;
+APPEND Overlap = !B1 & !B2 & !B3 & !A1 & !A2 & A4;
+APPEND Overlap = !B1 & B2  & !A1 & A2  & A3  & A4;
+APPEND Overlap = B1  & !B2 & A1  & !A2 & A3  & A4;
+APPEND Overlap = !B1 & !B2 & !A1 & !A2 & A3  & A4;
+APPEND Overlap = B1  & !B2 & B3  & B4  & A1  & A2  & !A4;
+APPEND Overlap = !B1 & !B2 & B3  & B4  & !A1 & A2  & !A4;
+APPEND Overlap = !B1 & B2  & B3  & B4  & A1  & !A2 & !A4;
+APPEND Overlap = B1  & !B2 & B4  & A1  & A2  & !A3 & !A4;
+APPEND Overlap = !B1 & !B2 & B4  & !A1 & A2  & !A3 & !A4;
+APPEND Overlap = !B1 & B2  & B4  & A1  & !A2 & !A3 & !A4;
+
+O4 = I7;
+O5 = I6;
+O6 = I5;
+O7 = I4;
+
