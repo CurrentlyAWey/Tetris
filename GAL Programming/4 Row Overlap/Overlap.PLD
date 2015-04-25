@@ -21,51 +21,48 @@ Pin 6 = B2;
 Pin 7 = B3;
 Pin 8 = B4;
 
-/*
-
-Pin 9 = I0;
-Pin 11 = I2; 
-Pin 12 = I1;
-Pin 13 = I0;
-
-*/
 
 /**Outputs**/
+Pin 15 = Inter4;
+Pin 16 = Inter1;
+Pin 17 = Inter2;
+Pin 18 = Inter3;
 
-/*
-Pin 14 = O4;
-Pin 15 = O5;
-Pin 16 = O6;
-*/
-
-Pin 18 = !Overlap;
-Pin 19 = Overlap;
+Pin 14 = Overlap;
+Pin 13 = !NotOverlap;
 
 
-Overlap = B1 & B2 & !B3 & !B4 & A1 & A2;
-APPEND Overlap = !B1 & B2  & !B3 & !B4 & !A1 & A2;
-APPEND Overlap = B1  & !B2 & !B3 & !B4 & A1  & !A2;
-APPEND Overlap = !B1 & !B2 & !B3 & !B4 & !A1 & !A2;
-APPEND Overlap = !B1 & B2  & !B3 & !A1 & A2  & A3;
-APPEND Overlap = !B1 & B2  & !B4 & !A1 & A2  & A3;
-APPEND Overlap = B1  & !B2 & !B3 & A1  & !A2 & A3;
-APPEND Overlap = B1  & !B2 & !B4 & A1  & !A2 & A3;
-APPEND Overlap = !B1 & !B2 & !B3 & !A1 & !A2 & A3;
-APPEND Overlap = !B1 & !B2 & !B4 & !A1 & !A2 & A3;
-APPEND Overlap = B1  & !B2 & B3  & A1  & A2  & !A3;
-APPEND Overlap = !B1 & !B2 & B3  & !A1 & A2  & !A3;
-APPEND Overlap = !B1 & B2  & B3  & A1  & !A2 & !A3;
-APPEND Overlap = !B1 & B2  & !B3 & !A1 & A2  & A4;
-APPEND Overlap = B1  & !B2 & !B3 & A1  & !A2 & A4;
-APPEND Overlap = !B1 & !B2 & !B3 & !A1 & !A2 & A4;
-APPEND Overlap = !B1 & B2  & !A1 & A2  & A3  & A4;
-APPEND Overlap = B1  & !B2 & A1  & !A2 & A3  & A4;
-APPEND Overlap = !B1 & !B2 & !A1 & !A2 & A3  & A4;
-APPEND Overlap = B1  & !B2 & B3  & B4  & A1  & A2  & !A4;
-APPEND Overlap = !B1 & !B2 & B3  & B4  & !A1 & A2  & !A4;
-APPEND Overlap = !B1 & B2  & B3  & B4  & A1  & !A2 & !A4;
-APPEND Overlap = B1  & !B2 & B4  & A1  & A2  & !A3 & !A4;
-APPEND Overlap = !B1 & !B2 & B4  & !A1 & A2  & !A3 & !A4;
-APPEND Overlap = !B1 & B2  & B4  & A1  & !A2 & !A3 & !A4;
 
+O1 = B1 & B2 & !B3 & !B4 & A1 & A2;
+O2 = !B1 & B2  & !B3 & !B4 & !A1 & A2;
+O3 = B1  & !B2 & !B3 & !B4 & A1  & !A2;
+O4 = !B1 & !B2 & !B3 & !B4 & !A1 & !A2;
+O5 = !B1 & B2  & !B3 & !A1 & A2  & A3;
+O6 = !B1 & B2  & !B4 & !A1 & A2  & A3;
+O7 = B1  & !B2 & !B3 & A1  & !A2 & A3;
+O8 = B1  & !B2 & !B4 & A1  & !A2 & A3;
+O9 = !B1 & !B2 & !B3 & !A1 & !A2 & A3;
+Oa = !B1 & !B2 & !B4 & !A1 & !A2 & A3;
+Ob = B1  & !B2 & B3  & A1  & A2  & !A3;
+Oc = !B1 & !B2 & B3  & !A1 & A2  & !A3;
+Od = !B1 & B2  & B3  & A1  & !A2 & !A3;
+Oe = !B1 & B2  & !B3 & !A1 & A2  & A4;
+Of = B1  & !B2 & !B3 & A1  & !A2 & A4;
+Og = !B1 & !B2 & !B3 & !A1 & !A2 & A4;
+Oh = !B1 & B2  & !A1 & A2  & A3  & A4;
+Oi = B1  & !B2 & A1  & !A2 & A3  & A4;
+Oj = !B1 & !B2 & !A1 & !A2 & A3  & A4;
+Ok = B1  & !B2 & B3  & B4  & A1  & A2  & !A4;
+Ol = !B1 & !B2 & B3  & B4  & !A1 & A2  & !A4;
+Om = !B1 & B2  & B3  & B4  & A1  & !A2 & !A4;
+On = B1  & !B2 & B4  & A1  & A2  & !A3 & !A4;
+Oo = !B1 & !B2 & B4  & !A1 & A2  & !A3 & !A4;
+Op = !B1 & B2  & B4  & A1  & !A2 & !A3 & !A4;
+Inter1 = [O1,O2,O3,O4,O5,O6]:#;
+Inter2 = [O7,O8,O9,Oa,Ob,Oc]:#;
+Inter3 = [Od,Oe,Of,Og,Oh,Oi]:#;
+Inter4 = [Oj,Ok,Ol,Om,On,Oo]:#;
+Overlap = [Inter1, Inter2, Inter3, Inter4]:#;
+
+NotOverlap = Overlap;
 
