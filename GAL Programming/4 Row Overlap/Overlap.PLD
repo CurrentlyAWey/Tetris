@@ -40,7 +40,6 @@ Pin 16 = O6;
 
 Pin 18 = !Overlap;
 Pin 19 = Overlap;
-Pin 20 = AND;
 
 
 Overlap = B1 & B2 & !B3 & !B4 & A1 & A2;
@@ -69,8 +68,4 @@ APPEND Overlap = B1  & !B2 & B4  & A1  & A2  & !A3 & !A4;
 APPEND Overlap = !B1 & !B2 & B4  & !A1 & A2  & !A3 & !A4;
 APPEND Overlap = !B1 & B2  & B4  & A1  & !A2 & !A3 & !A4;
 
-O4 = I7;
-O5 = I6;
-O6 = I5;
-O7 = I4;
 
