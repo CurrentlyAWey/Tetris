@@ -23,50 +23,51 @@ Pin 8 = B4;
 
 
 /**Outputs**/
-Pin 15 = Inter4;
-Pin 16 = Inter1;
-Pin 17 = Inter2;
-Pin 18 = Inter3;
+
+Pin 15 = I1;
+Pin 16 = I2;
+Pin 17 = I3;
+Pin 18 = I4;
 
 Pin 14 = Overlap;
 Pin 13 = !NotOverlap;
 
 
 
-O0 = 	A1 	& 	A2	& 	A3'	& 	A4'	& 	B1 	& 	B2					; 
-O1 = 	A1'	& 	A2'	& 			A4'	& 	B1' & 	B2' & 	B3			; 
-O2 = 	A1 	& 	A2'	& 	A3 	& 			B1 	& 	B2 	& 	B3'			; 
-O3 = 	A1'	& 	A2'	& 	A3 	& 			B1'	& 	B2 	& 	B3'			; 
-O4 = 	A1 	& 	A2	& 	A3'	& 			B1 	& 	B2 	& 			B4	;
-O5 = 	A1 	& 	A2'	& 	A3'	& 			B1 	& 	B2' & 			B4	;
-O6 = 	A1'	& 	A2'	& 	A3'	& 			B1'	& 	B2' & 			B4	; 
+O0 = 	A1 	& 	A2	& 	!A3	& 	!A4	& 	B1 	& 	B2					; 
+O1 = 	!A1	& 	!A2	& 			!A4	& 	!B1 & 	!B2 & 	B3			; 
+O2 = 	A1 	& 	!A2	& 	A3 	& 			B1 	& 	B2 	& 	!B3			; 
+O3 = 	!A1	& 	!A2	& 	A3 	& 			!B1	& 	B2 	& 	!B3			; 
+O4 = 	A1 	& 	A2	& 	!A3	& 			B1 	& 	B2 	& 			B4	;
+O5 = 	A1 	& 	!A2	& 	!A3	& 			B1 	& 	!B2 & 			B4	;
+O6 = 	!A1	& 	!A2	& 	!A3	& 			!B1	& 	!B2 & 			B4	; 
 O7 = 	A1 	& 	A2	& 					B1 	& 	B2 	& 	B3 	& 	B4	; 
-O8 = 	A1 	& 	A2'	& 					B1 	& 	B2' & 	B3 	& 	B4	; 
-O9 = 	A1'	& 			A3 	& 	A4 	& 	B1'	& 	B2 	& 			B4'	; 
-O10 = 	A1'	& 	A2	& 	A3 	& 	A4'	& 	B1 	& 	B2' & 	B3'			; 
-O11 = 	A1'	& 			A3 	& 	A4 	& 	B1'	& 	B2' & 	B3 	& 	B4	; 
-O12 = 	A1 	& 	A2'	& 	A3 	& 	A4 	& 	B1 	& 	B2 	& 	B4'			; 
-O13 = 	A1 	& 	A2'	& 			A4 	& 	B1 	& 	B2 	& 	B3' & 	B4'	; 
-O14 = 	A1'	& 	A2'	& 			A4 	& 	B1'	& 	B2 	& 	B3' & 	B4'	; 
-O15 = 	A1'	& 	A2	& 	A3'	& 	A4 	& 	B1 	& 	B2' & 	B3' & 	B4'	; 
-O16 = 	A1'	& 	A2	& 	A3'	& 			B1'	& 	B2 	& 	B3			; 
-O17 = 	A1'	& 	A2	& 			A4 	& 	B1'	& 	B2 	& 	B3' & 	B4	;
-O18 = 	A1'	& 	A2	& 	A3'	& 	A4' & 	B1'	& 	B2					; 
-O19 = 	A1 	& 	A2'	& 	A3'	& 	A4' & 	B1 	& 	B2'					; 
-O20 = 	A1'	& 	A2'	& 	A3'	& 	A4' & 	B1'	& 	B2'					; 
-O21 = 	A1 	& 	A2	& 	A3'	& 			B1 	& 	B2 	& 	B3			; 
-O22 = 	A1 	& 	A2	& 			A4' & 	B1 	& 	B2 	& 	B3			; 
-O23 = 	A1'	& 	A2	& 			A4' & 	B1'	& 	B2 	& 	B3			; 
-O24 = 	A1 	& 	A2'	& 	A3'	& 			B1 	& 	B2' & 	B3			; 
-O25 = 	A1 	& 	A2'	& 			A4' & 	B1 	& 	B2' & 	B3			; 
-O26 = 	A1'	& 	A2'	& 	A3'	& 			B1'	& 	B2' & 	B3			; 
+O8 = 	A1 	& 	!A2	& 					B1 	& 	!B2 & 	B3 	& 	B4	; 
+O9 = 	!A1	& 			A3 	& 	A4 	& 	!B1	& 	B2 	& 			!B4	; 
+O10 = 	!A1	& 	A2	& 	A3 	& 	!A4	& 	B1 	& 	!B2 & 	!B3			; 
+O11 = 	!A1	& 			A3 	& 	A4 	& 	!B1	& 	!B2 & 	B3 	& 	B4	; 
+O12 = 	A1 	& 	!A2	& 	A3 	& 	A4 	& 	B1 	& 	B2 	& 	!B4			; 
+O13 = 	A1 	& 	!A2	& 			A4 	& 	B1 	& 	B2 	& 	!B3 & 	!B4	; 
+O14 = 	!A1	& 	!A2	& 			A4 	& 	!B1	& 	B2 	& 	!B3 & 	!B4	; 
+O15 = 	!A1	& 	A2	& 	!A3	& 	A4 	& 	B1 	& 	!B2 & 	!B3 & 	!B4	; 
+O16 = 	!A1	& 	A2	& 	!A3	& 			!B1	& 	B2 	& 	B3			; 
+O17 = 	!A1	& 	A2	& 			A4 	& 	!B1	& 	B2 	& 	!B3 & 	B4	;
+O18 = 	!A1	& 	A2	& 	!A3	& 	!A4 & 	!B1	& 	B2					; 
+O19 = 	A1 	& 	!A2	& 	!A3	& 	!A4 & 	B1 	& 	!B2					; 
+O20 = 	!A1	& 	!A2	& 	!A3	& 	!A4 & 	!B1	& 	!B2					; 
+O21 = 	A1 	& 	A2	& 	!A3	& 			B1 	& 	B2 	& 	B3			; 
+O22 = 	A1 	& 	A2	& 			!A4 & 	B1 	& 	B2 	& 	B3			; 
+O23 = 	!A1	& 	A2	& 			!A4 & 	!B1	& 	B2 	& 	B3			; 
+O24 = 	A1 	& 	!A2	& 	!A3	& 			B1 	& 	!B2 & 	B3			; 
+O25 = 	A1 	& 	!A2	& 			!A4 & 	B1 	& 	!B2 & 	B3			; 
+O26 = 	!A1	& 	!A2	& 	!A3	& 			!B1	& 	!B2 & 	B3			; 
 
-Inter1 = [O0, O1, O2, O3, O4, O5, O6 ]:#;
-Inter2 = [O7, O8, O9, O0, O10,O11,O24]:#;
-Inter3 = [O12,O13,O14,O15,O16,O17,O25]:#;
-Inter4 = [O18,O19,O20,O21,O22,O23,O26]:#;
+I1 = [O0, O1, O2, O3, O4, O5, O6 ]:#;
+I2 = [O7, O8, O9, O0, O10,O11,O24]:#;
+I3 = [O12,O13,O14,O15,O16,O17,O25]:#;
+I4 = [O18,O19,O20,O21,O22,O23,O26]:#;
 
-Overlap = [Inter1, Inter2, Inter3, Inter4]:#;
+Overlap = [I1, I2, I3, I4]:#;
 
 NotOverlap = Overlap;
 
