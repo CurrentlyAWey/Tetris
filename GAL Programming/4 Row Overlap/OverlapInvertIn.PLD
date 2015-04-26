@@ -1,73 +1,68 @@
-Name 	OverlapInv;
-Partno 	01;
+Name	OverlapInv;
+Partno  	01;
 Date 	4/24/2015;
-Rev 	01;
+Rev  	01;
 Designer 	Arnold Wey;
-Company 	CU Later;
-Assembly 	None;
-Location 	None;
-Device 	g16v8;
+Company  	CU Later;
+Assembly  	None;
+Location  	None;
+Device  	g16v8;
 
 /**Inputs**/
 
 
-Pin 1 = !A1;
-Pin 2 = !A2;
-Pin 3 = !A3;
-Pin 4 = !A4;
+Pin 1 =	!A1;
+Pin 2 =	!A2;
+Pin 3 =	!A3;
+Pin 4 =	!A4;
 
-Pin 5 = !B1;
-Pin 6 = !B2;
-Pin 7 = !B3;
-Pin 8 = !B4;
+Pin 5 =	!B1;
+Pin 6 =	!B2;
+Pin 7 =	!B3;
+Pin 8 =	!B4;
 
 
 /**Outputs**/
 
-Pin 15 = I1;
-Pin 16 = I2;
-Pin 17 = I3;
-Pin 18 = I4;
+Pin 15 =	I1;
+Pin 16 =	I2;
+Pin 17 =	I3;
+Pin 18 =	I4;
 
-Pin 14 = Overlap;
-Pin 13 = !NotOverlap;
+Pin 14 =	Overlap;
+Pin 13 =	!NotOverlap;
 
 
 
-O0 = 	A1 	& 	A2	& 	!A3	& 	!A4	& 	B1 	& 	B2					; 
-O1 = 	!A1	& 	!A2	& 			!A4	& 	!B1 & 	!B2 & 	B3			; 
-O2 = 	A1 	& 	!A2	& 	A3 	& 			B1 	& 	B2 	& 	!B3			; 
-O3 = 	!A1	& 	!A2	& 	A3 	& 			!B1	& 	B2 	& 	!B3			; 
-O4 = 	A1 	& 	A2	& 	!A3	& 			B1 	& 	B2 	& 			B4	;
-O5 = 	A1 	& 	!A2	& 	!A3	& 			B1 	& 	!B2 & 			B4	;
-O6 = 	!A1	& 	!A2	& 	!A3	& 			!B1	& 	!B2 & 			B4	; 
-O7 = 	A1 	& 	A2	& 					B1 	& 	B2 	& 	B3 	& 	B4	; 
-O8 = 	A1 	& 	!A2	& 					B1 	& 	!B2 & 	B3 	& 	B4	; 
-O9 = 	!A1	& 			A3 	& 	A4 	& 	!B1	& 	B2 	& 			!B4	; 
-O10 = 	!A1	& 	A2	& 	A3 	& 	!A4	& 	B1 	& 	!B2 & 	!B3			; 
-O11 = 	!A1	& 			A3 	& 	A4 	& 	!B1	& 	!B2 & 	B3 	& 	B4	; 
-O12 = 	A1 	& 	!A2	& 	A3 	& 	A4 	& 	B1 	& 	B2 	& 	!B4			; 
-O13 = 	A1 	& 	!A2	& 			A4 	& 	B1 	& 	B2 	& 	!B3 & 	!B4	; 
-O14 = 	!A1	& 	!A2	& 			A4 	& 	!B1	& 	B2 	& 	!B3 & 	!B4	; 
-O15 = 	!A1	& 	A2	& 	!A3	& 	A4 	& 	B1 	& 	!B2 & 	!B3 & 	!B4	; 
-O16 = 	!A1	& 	A2	& 	!A3	& 			!B1	& 	B2 	& 	B3			; 
-O17 = 	!A1	& 	A2	& 			A4 	& 	!B1	& 	B2 	& 	!B3 & 	B4	;
-O18 = 	!A1	& 	A2	& 	!A3	& 	!A4 & 	!B1	& 	B2					; 
-O19 = 	A1 	& 	!A2	& 	!A3	& 	!A4 & 	B1 	& 	!B2					; 
-O20 = 	!A1	& 	!A2	& 	!A3	& 	!A4 & 	!B1	& 	!B2					; 
-O21 = 	A1 	& 	A2	& 	!A3	& 			B1 	& 	B2 	& 	B3			; 
-O22 = 	A1 	& 	A2	& 			!A4 & 	B1 	& 	B2 	& 	B3			; 
-O23 = 	!A1	& 	A2	& 			!A4 & 	!B1	& 	B2 	& 	B3			; 
-O24 = 	A1 	& 	!A2	& 	!A3	& 			B1 	& 	!B2 & 	B3			; 
-O25 = 	A1 	& 	!A2	& 			!A4 & 	B1 	& 	!B2 & 	B3			; 
-O26 = 	!A1	& 	!A2	& 	!A3	& 			!B1	& 	!B2 & 	B3			; 
+F0 =	A1 	& 							!B1							;
+O0 =			!A2 & 	!A3 & 	!A4 &		 	B2					;
+O1 =			!A2 & 	!A3 & 					B2	& 	B3			;
+O2 =			!A2 & 			!A4 & 			B2 	& 	B3;
+O3 =			!A2 & 	!A3 & 					B2 	& 			B4	;
+O4 =			!A2 & 							B2 	& 	B3 	& 	B4	;
+O5 =					A3 	& 	A4 	& 			!B2 & 	B4			;
+O6 =	!A1 & 	!A2 & 					B1							;
+O7 =	!A1 & 							B1 	& 	B2					;
+O8 =	A1 	& 	A2 	& 							!B2					;
+O9 =			A2 	& 	!A3 & 	!A4 & 			!B2					;
+O10 =			A2 	& 	!A3 & 					!B2 & 	B3			;
+O11 =			A2 	& 			!A4 & 			!B2 & 	B3			;
+O12 =			!A2 & 	A3 	& 					!B2 & 	!B3			;
+O13 =			A2 	& 					!B1 & 	!B2 & 	!B3			;
+O14 =	!A1 & 					A4 	& 	B1 	& 	B4					;
+O15 =			A2 	& 	A3 	& 	!A4 & 			B2 	& 	!B3			;
+O16 =			A2 	& 	A3 	& 			B1 	& 	B2 	& 	!B3			;
+O17 =			A2 	& 	A3 	& 	A4 	& 	B1 	& 					B4	;
+O18 =			!A2 & 	A4 	& 					!B2 & 	!B3 & 	B4	;
+O19 =	!A1 & 			A3 	& 	A4 	& 			B2	& 	B3 	& 	B4	;
+O20 =			A2 	& 	!A3 & 	A4	& 			B2 	& 	!B3 & 	!B4	;
 
-I1 = [O0, O1, O2, O3, O4, O5, O6 ]:#;
-I2 = [O7, O8, O9, O0, O10,O11,O24]:#;
-I3 = [O12,O13,O14,O15,O16,O17,O25]:#;
-I4 = [O18,O19,O20,O21,O22,O23,O26]:#;
+I1 =	[O1, O2, O3,  O4, O5, O6]:#;
+I2 =	[O7, O8, O9, O0, O10,O11]:#;
+I3 =	[O12,O13,O14,O15,O16,O17]:#;
+I4 =	[O18,O19,O20,O0]:#;
 
-Overlap = [I1, I2, I3, I4]:#;
+Overlap =	[I1, I2, I3, I4]:#;
 
-NotOverlap = Overlap;
+NotOverlap =	Overlap;
 
