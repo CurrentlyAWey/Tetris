@@ -1,0 +1,329 @@
+
+*******************************************************************************
+                                    Overlap
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8ma  Library DLIB-h-40-8
+Created         Mon Apr 27 00:40:22 2015
+Name            Overlap
+Partno          01
+Revision        01
+Date            4/24/2015
+Designer        Arnold Wey
+Company         CU Later
+Assembly        None
+Location        None
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+I1 =>
+    A1 & A2 & !A3 & !A4 & B1 & B2
+  # !A1 & !A2 & !A4 & !B1 & !B2 & B3
+  # A1 & !A2 & A3 & B1 & B2 & !B3
+  # !A1 & !A2 & A3 & !B1 & B2 & !B3
+  # A1 & A2 & !A3 & B1 & B2 & B4
+  # A1 & !A2 & !A3 & B1 & !B2 & B4
+  # !A1 & !A2 & !A3 & !B1 & !B2 & B4
+
+I2 =>
+    A1 & !A2 & !A3 & B1 & !B2 & B3
+  # A1 & A2 & B1 & B2 & B3 & B4
+  # A1 & !A2 & B1 & !B2 & B3 & B4
+  # !A1 & A3 & A4 & !B1 & B2 & !B4
+  # !A1 & A2 & A3 & !A4 & B1 & !B2 & !B3
+  # !A1 & A3 & A4 & !B1 & !B2 & B3 & B4
+
+I3 =>
+    !A1 & A2 & !A3 & !B1 & B2 & B3
+  # A1 & !A2 & !A4 & B1 & !B2 & B3
+  # !A1 & A2 & A4 & !B1 & B2 & !B3 & B4
+  # A1 & !A2 & A3 & A4 & B1 & B2 & !B4
+  # A1 & !A2 & A4 & B1 & B2 & !B3 & !B4
+  # !A1 & !A2 & A4 & !B1 & B2 & !B3 & !B4
+  # !A1 & A2 & !A3 & A4 & B1 & !B2 & !B3 & !B4
+
+I4 =>
+    !A1 & A2 & !A3 & !A4 & !B1 & B2
+  # A1 & !A2 & !A3 & !A4 & B1 & !B2
+  # !A1 & !A2 & !A3 & !A4 & !B1 & !B2
+  # A1 & A2 & !A3 & B1 & B2 & B3
+  # A1 & A2 & !A4 & B1 & B2 & B3
+  # !A1 & A2 & !A4 & !B1 & B2 & B3
+  # !A1 & !A2 & !A3 & !B1 & !B2 & B3
+
+NotOverlap =>
+    !Overlap
+
+O0 =>
+    A1 & A2 & !A3 & !A4 & B1 & B2
+
+O1 =>
+    !A1 & !A2 & !A4 & !B1 & !B2 & B3
+
+O2 =>
+    A1 & !A2 & A3 & B1 & B2 & !B3
+
+O3 =>
+    !A1 & !A2 & A3 & !B1 & B2 & !B3
+
+O4 =>
+    A1 & A2 & !A3 & B1 & B2 & B4
+
+O5 =>
+    A1 & !A2 & !A3 & B1 & !B2 & B4
+
+O6 =>
+    !A1 & !A2 & !A3 & !B1 & !B2 & B4
+
+O7 =>
+    A1 & A2 & B1 & B2 & B3 & B4
+
+O8 =>
+    A1 & !A2 & B1 & !B2 & B3 & B4
+
+O9 =>
+    !A1 & A3 & A4 & !B1 & B2 & !B4
+
+O10 =>
+    !A1 & A2 & A3 & !A4 & B1 & !B2 & !B3
+
+O11 =>
+    !A1 & A3 & A4 & !B1 & !B2 & B3 & B4
+
+O12 =>
+    A1 & !A2 & A3 & A4 & B1 & B2 & !B4
+
+O13 =>
+    A1 & !A2 & A4 & B1 & B2 & !B3 & !B4
+
+O14 =>
+    !A1 & !A2 & A4 & !B1 & B2 & !B3 & !B4
+
+O15 =>
+    !A1 & A2 & !A3 & A4 & B1 & !B2 & !B3 & !B4
+
+O16 =>
+    !A1 & A2 & !A3 & !B1 & B2 & B3
+
+O17 =>
+    !A1 & A2 & A4 & !B1 & B2 & !B3 & B4
+
+O18 =>
+    !A1 & A2 & !A3 & !A4 & !B1 & B2
+
+O19 =>
+    A1 & !A2 & !A3 & !A4 & B1 & !B2
+
+O20 =>
+    !A1 & !A2 & !A3 & !A4 & !B1 & !B2
+
+O21 =>
+    A1 & A2 & !A3 & B1 & B2 & B3
+
+O22 =>
+    A1 & A2 & !A4 & B1 & B2 & B3
+
+O23 =>
+    !A1 & A2 & !A4 & !B1 & B2 & B3
+
+O24 =>
+    A1 & !A2 & !A3 & B1 & !B2 & B3
+
+O25 =>
+    A1 & !A2 & !A4 & B1 & !B2 & B3
+
+O26 =>
+    !A1 & !A2 & !A3 & !B1 & !B2 & B3
+
+Overlap =>
+    I1
+  # I2
+  # I3
+  # I4
+
+I1.oe  =>
+    1 
+
+I2.oe  =>
+    1 
+
+I3.oe  =>
+    1 
+
+I4.oe  =>
+    1 
+
+NotOverlap.oe  =>
+    1 
+
+Overlap.oe  =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A1                          1        V        -       -       -     
+    A2                          2        V        -       -       -     
+    A3                          3        V        -       -       -     
+    A4                          4        V        -       -       -     
+    B1                          5        V        -       -       -     
+    B2                          6        V        -       -       -     
+    B3                          7        V        -       -       -     
+    B4                          8        V        -       -       -     
+    I1                          15       V        7       7       2     
+    I2                          16       V        6       7       2     
+    I3                          17       V        7       7       2     
+    I4                          18       V        7       7       2     
+    NotOverlap                  13       V        1       7       2     
+    O0                          0        I        1       -       -     
+    O1                          0        I        1       -       -     
+    O2                          0        I        1       -       -     
+    O3                          0        I        1       -       -     
+    O4                          0        I        1       -       -     
+    O5                          0        I        1       -       -     
+    O6                          0        I        1       -       -     
+    O7                          0        I        1       -       -     
+    O8                          0        I        1       -       -     
+    O9                          0        I        1       -       -     
+    O10                         0        I        1       -       -     
+    O11                         0        I        1       -       -     
+    O12                         0        I        1       -       -     
+    O13                         0        I        1       -       -     
+    O14                         0        I        1       -       -     
+    O15                         0        I        1       -       -     
+    O16                         0        I        1       -       -     
+    O17                         0        I        1       -       -     
+    O18                         0        I        1       -       -     
+    O19                         0        I        1       -       -     
+    O20                         0        I        1       -       -     
+    O21                         0        I        1       -       -     
+    O22                         0        I        1       -       -     
+    O23                         0        I        1       -       -     
+    O24                         0        I        1       -       -     
+    O25                         0        I        1       -       -     
+    O26                         0        I        1       -       -     
+    Overlap                     14       V        4       7       2     
+    I1                  oe      15       D        1       1       0     
+    I2                  oe      16       D        1       1       0     
+    I3                  oe      17       D        1       1       0     
+    I4                  oe      18       D        1       1       0     
+    NotOverlap          oe      13       D        1       1       0     
+    Overlap             oe      14       D        1       1       0     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
+
+===============================================================================
+                                   Fuse Plot
+===============================================================================
+
+Syn   02192 - Ac0   02193 - 
+
+Pin #19  02048  Pol x  02120  Ac1 - 
+ 00000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00032 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00064 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00096 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00128 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00192 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00224 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #18  02049  Pol -  02121  Ac1 - 
+ 00256 -------------------------------- 
+ 00288 x--x-x---x---x--x--------------- 
+ 00320 -xx--x---x--x----x-------------- 
+ 00352 -x-x-x---x---x---x-------------- 
+ 00384 x-x--x------x---x---x----------- 
+ 00416 x-x------x--x---x---x----------- 
+ 00448 x--x-----x---x--x---x----------- 
+ 00480 -x-x-x-------x---x--x----------- 
+Pin #17  02050  Pol -  02122  Ac1 - 
+ 00512 -------------------------------- 
+ 00544 x--x-x-------x--x---x----------- 
+ 00576 -xx------x--x----x--x----------- 
+ 00608 x--x----x----x--x----x--x------- 
+ 00640 -xx-x---x---x---x--------x------ 
+ 00672 -xx-----x---x---x----x---x------ 
+ 00704 -x-x----x----x--x----x---x------ 
+ 00736 x--x-x--x---x----x---x---x------ 
+Pin #16  02051  Pol -  02123  Ac1 - 
+ 00768 -------------------------------- 
+ 00800 -xx--x------x----x--x----------- 
+ 00832 x-x---------x---x---x---x------- 
+ 00864 -xx---------x----x--x---x------- 
+ 00896 ---xx---x----x--x--------x------ 
+ 00928 x--xx----x--x----x---x---------- 
+ 00960 ---xx---x----x---x--x---x------- 
+ 00992 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #15  02052  Pol -  02124  Ac1 - 
+ 01024 -------------------------------- 
+ 01056 x-x--x---x--x---x--------------- 
+ 01088 -x-x-----x---x---x--x----------- 
+ 01120 -xx-x-------x---x----x---------- 
+ 01152 -x-xx--------x--x----x---------- 
+ 01184 x-x--x------x---x-------x------- 
+ 01216 -xx--x------x----x------x------- 
+ 01248 -x-x-x-------x---x------x------- 
+Pin #14  02053  Pol -  02125  Ac1 - 
+ 01280 -------------------------------- 
+ 01312 ------------------x------------- 
+ 01344 --------------x----------------- 
+ 01376 ----------x--------------------- 
+ 01408 ------x------------------------- 
+ 01440 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01472 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01504 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #13  02054  Pol -  02126  Ac1 - 
+ 01536 -------------------------------- 
+ 01568 -----------------------x-------- 
+ 01600 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01632 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01664 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01696 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01728 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01760 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #12  02055  Pol x  02127  Ac1 - 
+ 01792 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01824 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01856 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01888 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01920 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01952 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01984 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 02016 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+
+LEGEND    X : fuse not blown 
+          - : fuse blown 
+
+===============================================================================
+                                 Chip Diagram
+===============================================================================
+
+                               ______________
+                              |   Overlap    |
+                       A1 x---|1           20|---x Vcc                      
+                       A2 x---|2           19|---x                          
+                       A3 x---|3           18|---x I4                       
+                       A4 x---|4           17|---x I3                       
+                       B1 x---|5           16|---x I2                       
+                       B2 x---|6           15|---x I1                       
+                       B3 x---|7           14|---x Overlap                  
+                       B4 x---|8           13|---x NotOverlap               
+                          x---|9           12|---x                          
+                      GND x---|10          11|---x                          
+                              |______________|
+

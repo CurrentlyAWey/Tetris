@@ -1,0 +1,64 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Mon Apr 27 00:45:19 2015
+
+LISTING FOR SIMULATION FILE: OVERLAP.si
+
+   1: Name     	Overlap;
+   2: PartNo   	01;
+   3: Date     	4/24/2015;
+   4: Revision ;
+               ^
+[0025sa] Please note: inconsistent header information
+
+   5: Designer 	Arnold Wey;
+   6: Company  	CU Later;
+   7: Assembly 	None;
+   8: Location 	None;
+   9: Device   	g16v8;
+  10: 
+  11: 
+  12: ORDER: A1, A2, A3, A4, B1, B2, B3, B4, Overlap, NotOverlap; 
+  13: 
+  14: 
+
+===================
+               N   
+               o   
+               t   
+              OO   
+              vv   
+              ee   
+              rr   
+              ll   
+      AAAABBBBaa   
+      12341234pp   
+===================
+0001: 110011XXHL
+0002: 00X0001XHL
+0003: 101X110XHL
+0004: 001X010XHL
+0005: 110X1101HL
+0006: 100X10X1HL
+0007: 000X00X1HL
+0008: 11XX1111HL
+0009: 10XX1011HL
+0010: 0X1101X0HL
+0011: 0110100XHL
+0012: 0X110011HL
+0013: 101111X0HL
+0014: 10X11100HL
+0015: 00X10100HL
+0016: 01011000HL
+0017: 010X011XHL
+0018: 01X10101HL
+0019: 010001XXHL
+0020: 100010XXHL
+0021: 000000XXHL
+0022: 110X111XHL
+0023: 11X0111XHL
+0024: 01X0011XHL
+0025: 100X101XHL
+0026: 10X0101XHL
+0027: 000X001XHL

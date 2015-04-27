@@ -1,4 +1,4 @@
-Name	Third;
+Name	BitField;
 Partno  01;
 Date 	4/24/2015;
 Rev 	01;
@@ -21,6 +21,8 @@ Pin  6 =	B2;
 Pin  7 =	B3;
 Pin  8 =	B4;
 
+FIELD RowField = [A1, A2, A3, A4];
+FIELD RowMino = [B1, B2, B3, B4];
 
 /**Outputs**/
 
@@ -55,12 +57,12 @@ O17 = !B2 # B4 # A2 # !A3;
 O18 = !B2 # !B3 # !B4 # !A2 # A4;
 O19 = !B2 # !B4 # !A2 # A3 # A4;
 
-I1 =	[O0,O1,O2,O3,O4,O14]:&;
+I1 =	[O0,O1,O2,O3,O4]:&;
 I2 =	[O5,O6,O7,O8,O9]:&;
-I3 =	[O10,O11,O12]:&;
+I3 =	[O10,O11,O12,O13,O14]:&;
 I4 =	[O15,O16,O17,O18,O19]:&;
 
-Overlap =	[I1,I2,I3,I4,O13]:&;
+Overlap =	[I1,I2,I3,I4]:&;
 
 NotOverlap = Overlap;
 
