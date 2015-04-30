@@ -3,7 +3,7 @@ LISTING FOR LOGIC DESCRIPTION FILE: OVERLAP.pld                      Page 1
 CUPL(WM): Universal Compiler for Programmable Logic
 Version 5.0a Serial# 60008009
 Copyright (c) 1983, 1998 Logical Devices, Inc.
-Created Mon Apr 27 12:16:26 2015
+Created Thu Apr 30 03:08:15 2015
 
   1:Name    Overlap;
   2:Partno  01;
@@ -64,7 +64,7 @@ LISTING FOR LOGIC DESCRIPTION FILE: OVERLAP.pld                      Page 2
 CUPL(WM): Universal Compiler for Programmable Logic
 Version 5.0a Serial# 60008009
 Copyright (c) 1983, 1998 Logical Devices, Inc.
-Created Mon Apr 27 12:16:26 2015
+Created Thu Apr 30 03:08:15 2015
 
  54:O17 = !B2       #       B4              #       A2              #       !A3     ;
  55:O18 = !B2       #       !B3             #       !B4             #       !A2             #       A4      ;
@@ -84,4 +84,4 @@ Created Mon Apr 27 12:16:26 2015
 
 
 Jedec Fuse Checksum       (a2cf)
-Jedec Transmit Checksum   (a675)
+Jedec Transmit Checksum   (a676)

@@ -1,1563 +1,286 @@
 CSIM(WM): CUPL Simulation Program
 Version 5.0a Serial# 
 Copyright (c) 1983, 1998 Logical Devices, Inc.
-CREATED Thu Apr 30 01:58:08 2015
+CREATED Thu Apr 30 03:04:29 2015
 
 LISTING FOR SIMULATION FILE: 8ANDNOR.si
 
-   1: Name 8AndNor;
-   2: Partno 01;
-   3: Date 4/15/2015;
-   4: Rev 01;
+   1: Name     8AndNor;
+   2: PartNo   01;
+   3: Date     4/15/2015;
+   4: Revision ;
+               ^
+[0025sa] Please note: inconsistent header information
+
    5: Designer Arnold Wey;
-   6: Company CU Later;
+   6: Company  CU Later;
    7: Assembly None;
    8: Location None;
-   9: Device g16v8;
+   9: Device   g16v8;
   10: 
-  11: ORDER:I7,I6,I5,I4,I3,I0,I1,I2,,AND,OR;
-                                    ^
-[0009sa] invalid syntax:  ,
-
-  12: 
+  11: 
+  12: ORDER: I7, I6, I5, I4, I3, I0, I1, I2, AND, OR; 
+  13: 
+  14: 
 
-=================
-      IIIIIIII   
-      76543012   
-=================
-  14: 00000000LL
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  L
-
-0001: 00000000
-  15: 00000001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0002: 00000001
-  16: 00000010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0003: 00000010
-  17: 00000011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0004: 00000011
-  18: 00000100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0005: 00000100
-  19: 00000101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0006: 00000101
-  20: 00000110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0007: 00000110
-  21: 00000111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0008: 00000111
-  22: 00001000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0009: 00001000
-  23: 00001001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0010: 00001001
-  24: 00001010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0011: 00001010
-  25: 00001011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0012: 00001011
-  26: 00001100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0013: 00001100
-  27: 00001101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0014: 00001101
-  28: 00001110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0015: 00001110
-  29: 00001111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0016: 00001111
-  30: 00010000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0017: 00010000
-  31: 00010001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0018: 00010001
-  32: 00010010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0019: 00010010
-  33: 00010011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0020: 00010011
-  34: 00010100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0021: 00010100
-  35: 00010101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0022: 00010101
-  36: 00010110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0023: 00010110
-  37: 00010111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0024: 00010111
-  38: 00011000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0025: 00011000
-  39: 00011001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0026: 00011001
-  40: 00011010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0027: 00011010
-  41: 00011011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0028: 00011011
-  42: 00011100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0029: 00011100
-  43: 00011101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0030: 00011101
-  44: 00011110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0031: 00011110
-  45: 00011111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0032: 00011111
-  46: 00100000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0033: 00100000
-  47: 00100001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0034: 00100001
-  48: 00100010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0035: 00100010
-  49: 00100011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0036: 00100011
-  50: 00100100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0037: 00100100
-  51: 00100101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0038: 00100101
-  52: 00100110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0039: 00100110
-  53: 00100111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0040: 00100111
-  54: 00101000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0041: 00101000
-  55: 00101001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0042: 00101001
-  56: 00101010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0043: 00101010
-  57: 00101011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0044: 00101011
-  58: 00101100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0045: 00101100
-  59: 00101101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0046: 00101101
-  60: 00101110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0047: 00101110
-  61: 00101111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0048: 00101111
-  62: 00110000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0049: 00110000
-  63: 00110001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0050: 00110001
-  64: 00110010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0051: 00110010
-  65: 00110011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0052: 00110011
-  66: 00110100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0053: 00110100
-  67: 00110101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0054: 00110101
-  68: 00110110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0055: 00110110
-  69: 00110111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0056: 00110111
-  70: 00111000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0057: 00111000
-  71: 00111001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0058: 00111001
-  72: 00111010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0059: 00111010
-  73: 00111011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0060: 00111011
-  74: 00111100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0061: 00111100
-  75: 00111101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0062: 00111101
-  76: 00111110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0063: 00111110
-  77: 00111111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0064: 00111111
-  78: 01000000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0065: 01000000
-  79: 01000001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0066: 01000001
-  80: 01000010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0067: 01000010
-  81: 01000011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0068: 01000011
-  82: 01000100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0069: 01000100
-  83: 01000101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0070: 01000101
-  84: 01000110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0071: 01000110
-  85: 01000111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0072: 01000111
-  86: 01001000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0073: 01001000
-  87: 01001001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0074: 01001001
-  88: 01001010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0075: 01001010
-  89: 01001011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0076: 01001011
-  90: 01001100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0077: 01001100
-  91: 01001101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0078: 01001101
-  92: 01001110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0079: 01001110
-  93: 01001111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0080: 01001111
-  94: 01010000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0081: 01010000
-  95: 01010001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0082: 01010001
-  96: 01010010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0083: 01010010
-  97: 01010011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0084: 01010011
-  98: 01010100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0085: 01010100
-  99: 01010101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0086: 01010101
- 100: 01010110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0087: 01010110
- 101: 01010111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0088: 01010111
- 102: 01011000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0089: 01011000
- 103: 01011001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0090: 01011001
- 104: 01011010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0091: 01011010
- 105: 01011011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0092: 01011011
- 106: 01011100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0093: 01011100
- 107: 01011101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0094: 01011101
- 108: 01011110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0095: 01011110
- 109: 01011111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0096: 01011111
- 110: 01100000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0097: 01100000
- 111: 01100001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0098: 01100001
- 112: 01100010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0099: 01100010
- 113: 01100011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0100: 01100011
- 114: 01100100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0101: 01100100
- 115: 01100101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0102: 01100101
- 116: 01100110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0103: 01100110
- 117: 01100111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0104: 01100111
- 118: 01101000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0105: 01101000
- 119: 01101001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0106: 01101001
- 120: 01101010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0107: 01101010
- 121: 01101011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0108: 01101011
- 122: 01101100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0109: 01101100
- 123: 01101101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0110: 01101101
- 124: 01101110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0111: 01101110
- 125: 01101111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0112: 01101111
- 126: 01110000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0113: 01110000
- 127: 01110001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0114: 01110001
- 128: 01110010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0115: 01110010
- 129: 01110011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0116: 01110011
- 130: 01110100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0117: 01110100
- 131: 01110101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0118: 01110101
- 132: 01110110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0119: 01110110
- 133: 01110111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0120: 01110111
- 134: 01111000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0121: 01111000
- 135: 01111001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0122: 01111001
- 136: 01111010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0123: 01111010
- 137: 01111011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0124: 01111011
- 138: 01111100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0125: 01111100
- 139: 01111101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0126: 01111101
- 140: 01111110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0127: 01111110
- 141: 01111111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0128: 01111111
- 142: 10000000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0129: 10000000
- 143: 10000001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0130: 10000001
- 144: 10000010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0131: 10000010
- 145: 10000011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0132: 10000011
- 146: 10000100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0133: 10000100
- 147: 10000101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0134: 10000101
- 148: 10000110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0135: 10000110
- 149: 10000111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0136: 10000111
- 150: 10001000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0137: 10001000
- 151: 10001001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0138: 10001001
- 152: 10001010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0139: 10001010
- 153: 10001011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0140: 10001011
- 154: 10001100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0141: 10001100
- 155: 10001101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0142: 10001101
- 156: 10001110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0143: 10001110
- 157: 10001111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0144: 10001111
- 158: 10010000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0145: 10010000
- 159: 10010001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0146: 10010001
- 160: 10010010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0147: 10010010
- 161: 10010011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0148: 10010011
- 162: 10010100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0149: 10010100
- 163: 10010101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0150: 10010101
- 164: 10010110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0151: 10010110
- 165: 10010111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0152: 10010111
- 166: 10011000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0153: 10011000
- 167: 10011001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0154: 10011001
- 168: 10011010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0155: 10011010
- 169: 10011011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0156: 10011011
- 170: 10011100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0157: 10011100
- 171: 10011101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0158: 10011101
- 172: 10011110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0159: 10011110
- 173: 10011111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0160: 10011111
- 174: 10100000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0161: 10100000
- 175: 10100001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0162: 10100001
- 176: 10100010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0163: 10100010
- 177: 10100011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0164: 10100011
- 178: 10100100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0165: 10100100
- 179: 10100101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0166: 10100101
- 180: 10100110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0167: 10100110
- 181: 10100111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0168: 10100111
- 182: 10101000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0169: 10101000
- 183: 10101001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0170: 10101001
- 184: 10101010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0171: 10101010
- 185: 10101011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0172: 10101011
- 186: 10101100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0173: 10101100
- 187: 10101101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0174: 10101101
- 188: 10101110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0175: 10101110
- 189: 10101111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0176: 10101111
- 190: 10110000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0177: 10110000
- 191: 10110001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0178: 10110001
- 192: 10110010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0179: 10110010
- 193: 10110011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0180: 10110011
- 194: 10110100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0181: 10110100
- 195: 10110101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0182: 10110101
- 196: 10110110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0183: 10110110
- 197: 10110111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0184: 10110111
- 198: 10111000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0185: 10111000
- 199: 10111001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0186: 10111001
- 200: 10111010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0187: 10111010
- 201: 10111011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0188: 10111011
- 202: 10111100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0189: 10111100
- 203: 10111101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0190: 10111101
- 204: 10111110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0191: 10111110
- 205: 10111111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0192: 10111111
- 206: 11000000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0193: 11000000
- 207: 11000001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0194: 11000001
- 208: 11000010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0195: 11000010
- 209: 11000011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0196: 11000011
- 210: 11000100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0197: 11000100
- 211: 11000101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0198: 11000101
- 212: 11000110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0199: 11000110
- 213: 11000111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0200: 11000111
- 214: 11001000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0201: 11001000
- 215: 11001001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0202: 11001001
- 216: 11001010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0203: 11001010
- 217: 11001011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0204: 11001011
- 218: 11001100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0205: 11001100
- 219: 11001101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0206: 11001101
- 220: 11001110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0207: 11001110
- 221: 11001111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0208: 11001111
- 222: 11010000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0209: 11010000
- 223: 11010001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0210: 11010001
- 224: 11010010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0211: 11010010
- 225: 11010011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0212: 11010011
- 226: 11010100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0213: 11010100
- 227: 11010101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0214: 11010101
- 228: 11010110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0215: 11010110
- 229: 11010111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0216: 11010111
- 230: 11011000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0217: 11011000
- 231: 11011001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0218: 11011001
- 232: 11011010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0219: 11011010
- 233: 11011011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0220: 11011011
- 234: 11011100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0221: 11011100
- 235: 11011101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0222: 11011101
- 236: 11011110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0223: 11011110
- 237: 11011111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0224: 11011111
- 238: 11100000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0225: 11100000
- 239: 11100001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0226: 11100001
- 240: 11100010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0227: 11100010
- 241: 11100011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0228: 11100011
- 242: 11100100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0229: 11100100
- 243: 11100101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0230: 11100101
- 244: 11100110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0231: 11100110
- 245: 11100111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0232: 11100111
- 246: 11101000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0233: 11101000
- 247: 11101001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0234: 11101001
- 248: 11101010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0235: 11101010
- 249: 11101011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0236: 11101011
- 250: 11101100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0237: 11101100
- 251: 11101101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0238: 11101101
- 252: 11101110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0239: 11101110
- 253: 11101111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0240: 11101111
- 254: 11110000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0241: 11110000
- 255: 11110001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0242: 11110001
- 256: 11110010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0243: 11110010
- 257: 11110011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0244: 11110011
- 258: 11110100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0245: 11110100
- 259: 11110101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0246: 11110101
- 260: 11110110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0247: 11110110
- 261: 11110111LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0248: 11110111
- 262: 11111000LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0249: 11111000
- 263: 11111001LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0250: 11111001
- 264: 11111010LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0251: 11111010
- 265: 11111011LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0252: 11111011
- 266: 11111100LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0253: 11111100
- 267: 11111101LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0254: 11111101
- 268: 11111110LH
-              ^^
-[0013sa] excessive test value:  L
-[0013sa] excessive test value:  H
-
-0255: 11111110
- 269: 11111111HH
-              ^^
-[0013sa] excessive test value:  H
-[0013sa] excessive test value:  H
-
-0256: 11111111
+===================
+              A    
+      IIIIIIIINO   
+      76543012DR   
+===================
+0001: 00000000LL
+0002: 00000001LH
+0003: 00000010LH
+0004: 00000011LH
+0005: 00000100LH
+0006: 00000101LH
+0007: 00000110LH
+0008: 00000111LH
+0009: 00001000LH
+0010: 00001001LH
+0011: 00001010LH
+0012: 00001011LH
+0013: 00001100LH
+0014: 00001101LH
+0015: 00001110LH
+0016: 00001111LH
+0017: 00010000LH
+0018: 00010001LH
+0019: 00010010LH
+0020: 00010011LH
+0021: 00010100LH
+0022: 00010101LH
+0023: 00010110LH
+0024: 00010111LH
+0025: 00011000LH
+0026: 00011001LH
+0027: 00011010LH
+0028: 00011011LH
+0029: 00011100LH
+0030: 00011101LH
+0031: 00011110LH
+0032: 00011111LH
+0033: 00100000LH
+0034: 00100001LH
+0035: 00100010LH
+0036: 00100011LH
+0037: 00100100LH
+0038: 00100101LH
+0039: 00100110LH
+0040: 00100111LH
+0041: 00101000LH
+0042: 00101001LH
+0043: 00101010LH
+0044: 00101011LH
+0045: 00101100LH
+0046: 00101101LH
+0047: 00101110LH
+0048: 00101111LH
+0049: 00110000LH
+0050: 00110001LH
+0051: 00110010LH
+0052: 00110011LH
+0053: 00110100LH
+0054: 00110101LH
+0055: 00110110LH
+0056: 00110111LH
+0057: 00111000LH
+0058: 00111001LH
+0059: 00111010LH
+0060: 00111011LH
+0061: 00111100LH
+0062: 00111101LH
+0063: 00111110LH
+0064: 00111111LH
+0065: 01000000LH
+0066: 01000001LH
+0067: 01000010LH
+0068: 01000011LH
+0069: 01000100LH
+0070: 01000101LH
+0071: 01000110LH
+0072: 01000111LH
+0073: 01001000LH
+0074: 01001001LH
+0075: 01001010LH
+0076: 01001011LH
+0077: 01001100LH
+0078: 01001101LH
+0079: 01001110LH
+0080: 01001111LH
+0081: 01010000LH
+0082: 01010001LH
+0083: 01010010LH
+0084: 01010011LH
+0085: 01010100LH
+0086: 01010101LH
+0087: 01010110LH
+0088: 01010111LH
+0089: 01011000LH
+0090: 01011001LH
+0091: 01011010LH
+0092: 01011011LH
+0093: 01011100LH
+0094: 01011101LH
+0095: 01011110LH
+0096: 01011111LH
+0097: 01100000LH
+0098: 01100001LH
+0099: 01100010LH
+0100: 01100011LH
+0101: 01100100LH
+0102: 01100101LH
+0103: 01100110LH
+0104: 01100111LH
+0105: 01101000LH
+0106: 01101001LH
+0107: 01101010LH
+0108: 01101011LH
+0109: 01101100LH
+0110: 01101101LH
+0111: 01101110LH
+0112: 01101111LH
+0113: 01110000LH
+0114: 01110001LH
+0115: 01110010LH
+0116: 01110011LH
+0117: 01110100LH
+0118: 01110101LH
+0119: 01110110LH
+0120: 01110111LH
+0121: 01111000LH
+0122: 01111001LH
+0123: 01111010LH
+0124: 01111011LH
+0125: 01111100LH
+0126: 01111101LH
+0127: 01111110LH
+0128: 01111111LH
+0129: 10000000LH
+0130: 10000001LH
+0131: 10000010LH
+0132: 10000011LH
+0133: 10000100LH
+0134: 10000101LH
+0135: 10000110LH
+0136: 10000111LH
+0137: 10001000LH
+0138: 10001001LH
+0139: 10001010LH
+0140: 10001011LH
+0141: 10001100LH
+0142: 10001101LH
+0143: 10001110LH
+0144: 10001111LH
+0145: 10010000LH
+0146: 10010001LH
+0147: 10010010LH
+0148: 10010011LH
+0149: 10010100LH
+0150: 10010101LH
+0151: 10010110LH
+0152: 10010111LH
+0153: 10011000LH
+0154: 10011001LH
+0155: 10011010LH
+0156: 10011011LH
+0157: 10011100LH
+0158: 10011101LH
+0159: 10011110LH
+0160: 10011111LH
+0161: 10100000LH
+0162: 10100001LH
+0163: 10100010LH
+0164: 10100011LH
+0165: 10100100LH
+0166: 10100101LH
+0167: 10100110LH
+0168: 10100111LH
+0169: 10101000LH
+0170: 10101001LH
+0171: 10101010LH
+0172: 10101011LH
+0173: 10101100LH
+0174: 10101101LH
+0175: 10101110LH
+0176: 10101111LH
+0177: 10110000LH
+0178: 10110001LH
+0179: 10110010LH
+0180: 10110011LH
+0181: 10110100LH
+0182: 10110101LH
+0183: 10110110LH
+0184: 10110111LH
+0185: 10111000LH
+0186: 10111001LH
+0187: 10111010LH
+0188: 10111011LH
+0189: 10111100LH
+0190: 10111101LH
+0191: 10111110LH
+0192: 10111111LH
+0193: 11000000LH
+0194: 11000001LH
+0195: 11000010LH
+0196: 11000011LH
+0197: 11000100LH
+0198: 11000101LH
+0199: 11000110LH
+0200: 11000111LH
+0201: 11001000LH
+0202: 11001001LH
+0203: 11001010LH
+0204: 11001011LH
+0205: 11001100LH
+0206: 11001101LH
+0207: 11001110LH
+0208: 11001111LH
+0209: 11010000LH
+0210: 11010001LH
+0211: 11010010LH
+0212: 11010011LH
+0213: 11010100LH
+0214: 11010101LH
+0215: 11010110LH
+0216: 11010111LH
+0217: 11011000LH
+0218: 11011001LH
+0219: 11011010LH
+0220: 11011011LH
+0221: 11011100LH
+0222: 11011101LH
+0223: 11011110LH
+0224: 11011111LH
+0225: 11100000LH
+0226: 11100001LH
+0227: 11100010LH
+0228: 11100011LH
+0229: 11100100LH
+0230: 11100101LH
+0231: 11100110LH
+0232: 11100111LH
+0233: 11101000LH
+0234: 11101001LH
+0235: 11101010LH
+0236: 11101011LH
+0237: 11101100LH
+0238: 11101101LH
+0239: 11101110LH
+0240: 11101111LH
+0241: 11110000LH
+0242: 11110001LH
+0243: 11110010LH
+0244: 11110011LH
+0245: 11110100LH
+0246: 11110101LH
+0247: 11110110LH
+0248: 11110111LH
+0249: 11111000LH
+0250: 11111001LH
+0251: 11111010LH
+0252: 11111011LH
+0253: 11111100LH
+0254: 11111101LH
+0255: 11111110LH
+0256: 11111111HH

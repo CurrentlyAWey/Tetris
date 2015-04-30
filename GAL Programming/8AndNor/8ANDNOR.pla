@@ -1,0 +1,37 @@
+# Berkeley PLA format generated using
+#
+# CUPL(WM)        5.0a Serial# 60008009
+# Device          g16v8s  Library DLIB-h-40-9
+# Created         Thu Apr 30 03:04:19 2015
+# Name            8AndNor
+# Partno          01
+# Revision        01
+# Date            4/15/2015
+# Designer        Arnold Wey
+# Company         CU Later
+# Assembly        None
+# Location        None
+#
+# Inputs  AND I0 I1 I2 
+#         I3 I4 I5 I6 
+#         I7 O4 O5 O6 
+#         O7 OR 
+# Outputs AND O4 O5 O6 
+#         O7 OR 
+.i 14
+.o 6
+.p 13
+-11111111----- 1~~~~~
+-----1-------- ~1~~~~
+------1------- ~~1~~~
+-------1------ ~~~1~~
+--------1----- ~~~~1~
+-1------------ ~~~~~1
+--1----------- ~~~~~1
+---1---------- ~~~~~1
+----1--------- ~~~~~1
+-----1-------- ~~~~~1
+------1------- ~~~~~1
+-------1------ ~~~~~1
+--------1----- ~~~~~1
+.end

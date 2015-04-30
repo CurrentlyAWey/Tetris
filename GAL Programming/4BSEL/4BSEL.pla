@@ -1,0 +1,36 @@
+# Berkeley PLA format generated using
+#
+# CUPL(WM)        5.0a Serial# 60008009
+# Device          g22v10  Library DLIB-h-40-1
+# Created         Thu Apr 30 02:53:57 2015
+# Name            4bSel
+# Partno          01
+# Revision        01
+# Date            4/15/2015
+# Designer        Arnold Wey
+# Company         CU Later
+# Assembly        None
+# Location        None
+#
+# Inputs  1 A0 A1 A2 
+#         A3 ADD B0 B1 
+#         B2 B3 Y0 Y1 
+#         Y2 Y3 
+# Outputs Y0 Y1 Y2 Y3 
+#         Y0.oe Y1.oe Y2.oe Y3.oe 
+.i 14
+.o 8
+.p 12
+-1---0-------- 1~~~~~~~
+-----11------- 1~~~~~~~
+--1--0-------- ~1~~~~~~
+-----1-1------ ~1~~~~~~
+---1-0-------- ~~1~~~~~
+-----1--1----- ~~1~~~~~
+----10-------- ~~~1~~~~
+-----1---1---- ~~~1~~~~
+1------------- ~~~~1~~~
+1------------- ~~~~~1~~
+1------------- ~~~~~~1~
+1------------- ~~~~~~~1
+.end

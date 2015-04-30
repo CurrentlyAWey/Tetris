@@ -12,7 +12,7 @@ PIN  14 =  O4
 PIN  15 =  O5 
 PIN  16 =  O6 
 PIN  17 =  O7 
-PIN  18 = !OR 
+PIN  18 =  OR 
 %END
 
 %FIELD
@@ -35,13 +35,13 @@ O7 =>
     I7
 
 OR =>
-    I0
+    I7
+  # I6
+  # I5
+  # I4
+  # I3
+  # I0
   # I1
   # I2
-  # I3
-  # I4
-  # I5
-  # I6
-  # I7
 
 %END

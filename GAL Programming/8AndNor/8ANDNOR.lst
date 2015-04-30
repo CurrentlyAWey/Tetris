@@ -1,0 +1,46 @@
+LISTING FOR LOGIC DESCRIPTION FILE: 8ANDNOR.pld                      Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Thu Apr 30 03:04:19 2015
+
+  1:Name 8AndNor;
+  2:Partno 01;
+  3:Date 4/15/2015;
+  4:Rev 01;
+  5:Designer Arnold Wey;
+  6:Company CU Later;
+  7:Assembly None;
+  8:Location None;
+  9:Device g16v8;
+ 10:/**Inputs**/
+ 11:
+ 12:Pin 5 = I7;
+ 13:Pin 6 = I6;
+ 14:Pin 7 = I5;
+ 15:Pin 8 = I4;
+ 16:Pin 9 = I3;
+ 17:Pin 11 = I0;
+ 18:Pin 12 = I1;
+ 19:Pin 13 = I2;
+ 20:
+ 21:/**Outputs**/
+ 22:Pin 14 = O4;
+ 23:Pin 15 = O5;
+ 24:Pin 16 = O6;
+ 25:Pin 17 = O7;
+ 26:Pin 18 = OR;
+ 27:Pin 19 = AND;
+ 28:AND = [I7, I6, I5, I4, I3, I0, I1, I2]:&;
+ 29:OR = [I7, I6, I5, I4, I3, I0, I1, I2]:#;
+ 30:O4 = I4;
+ 31:O5 = I5;
+ 32:O6 = I6;
+ 33:O7 = I7;
+ 34:
+
+
+
+Jedec Fuse Checksum       (3bce)
+Jedec Transmit Checksum   (d39b)

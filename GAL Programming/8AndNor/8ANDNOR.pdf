@@ -5,7 +5,7 @@
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Thu Apr 30 02:09:05 2015 "}
+  {DBtime "Thu Apr 30 03:04:19 2015 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -43,7 +43,7 @@
    {P I2 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
    {P O4 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
    {P O7 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
-   {P OR' {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P OR {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
    {P AND {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
    {P O5 {Pt "I/O"}{Lq 0}{Ploc 280 20}}
    {P O6 {Pt "I/O"}{Lq 0}{Ploc 280 40}}
@@ -89,8 +89,7 @@
    {L 130 100 100 100}
    {L 130 80 100 80}
    {L 130 60 100 60}
-   {L 120 40 100 40}
-   {C 125 40 5}
+   {L 130 40 100 40}
    {L 130 20 100 20}
    {L 250 20 280 20}
    {L 250 40 280 40}
@@ -106,7 +105,7 @@
    {T "I2" 140 100}
    {T "O4" 140 80}
    {T "O7" 140 60}
-   {T "OR'" 140 40}
+   {T "OR" 140 40}
    {T "AND" 140 20}
    [Tj "RC"]
    {T "O5" 240 20}
@@ -154,7 +153,7 @@
    }
    {N O7
    }
-   {N OR'
+   {N OR
    }
    {N AND
    }

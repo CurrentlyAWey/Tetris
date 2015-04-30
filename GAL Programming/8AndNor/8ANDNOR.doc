@@ -5,7 +5,7 @@
 
 CUPL(WM)        5.0a Serial# 60008009
 Device          g16v8s  Library DLIB-h-40-9
-Created         Thu Apr 30 01:57:12 2015
+Created         Thu Apr 30 03:04:19 2015
 Name            8AndNor
 Partno          01
 Revision        01
@@ -66,7 +66,7 @@ Pol   Name              Ext     Pin     Type     Used   Pterms  Level
     O5                          15       V        1       8       2     
     O6                          16       V        1       8       2     
     O7                          17       V        1       8       2     
- !  OR                          18       V        8       8       2     
+    OR                          18       V        8       8       2     
 
 
 LEGEND    D : default variable         F : field      G : group
@@ -90,7 +90,7 @@ Pin #19  02048  Pol -  02120  Ac1 x
  00160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  00192 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
  00224 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
-Pin #18  02049  Pol x  02121  Ac1 x 
+Pin #18  02049  Pol -  02121  Ac1 x 
  00256 ------------------------------x- 
  00288 --------------------------x----- 
  00320 ----------------------x--------- 
@@ -166,7 +166,7 @@ LEGEND    X : fuse not blown
                               |   8AndNor    |
                           x---|1           20|---x Vcc                      
                           x---|2           19|---x AND                      
-                          x---|3           18|---x !OR                      
+                          x---|3           18|---x OR                       
                           x---|4           17|---x O7                       
                        I7 x---|5           16|---x O6                       
                        I6 x---|6           15|---x O5                       
