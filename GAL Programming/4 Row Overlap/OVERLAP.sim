@@ -1,0 +1,205 @@
+%SIGNAL
+PIN   1 =  A1 
+PIN   2 =  A2 
+PIN   3 =  A3 
+PIN   4 =  A4 
+PIN   5 =  B1 
+PIN   6 =  B2 
+PIN   7 =  B3 
+PIN   8 =  B4 
+PIN  15 =  I1 
+PIN  16 =  I2 
+PIN  17 =  I3 
+PIN  18 =  I4 
+PIN  13 =  NotOverlap 
+PIN  14 =  Overlap 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+I1 =>
+    A2 & B2
+  # !A2 & !B2
+  # !A2 & B3
+  # !A3 & B3
+  # !A2 & !A3 & B4
+  # !A3 & !A4 & B4
+  # !A4 & B3 & B4
+
+I2 =>
+    A1 & A2 & B1
+  # A1 & A3 & B1
+  # !A1 & A2 & !B1
+  # A1 & !A2 & B2
+  # A1 & B1 & !B3
+  # !A1 & A3 & !B1 & !B2
+  # !A1 & !B1 & !B2 & !B3
+
+I3 =>
+    A2
+  # !A3 & A4
+  # !A4 & B2
+  # A4 & !B2
+  # !A4 & !B3
+  # !A4 & !B4
+
+I4 =>
+    !B2
+  # A2 & A4
+  # A2 & !B4
+  # !A2 & !A3 & !A4
+  # !A2 & !A3 & B3
+  # !A2 & B3 & B4
+  # A3 & !A4 & !B3 & B4
+
+NotOverlap =>
+    !Overlap
+
+O0 =>
+    B2
+  # B3
+  # B4
+  # !A2
+
+O1 =>
+    B2
+  # B3
+  # !A2
+  # !A4
+
+O2 =>
+    B2
+  # B3
+  # !A2
+  # !A3
+
+O3 =>
+    B2
+  # B4
+  # !A2
+  # !A3
+
+O4 =>
+    B2
+  # !A2
+  # !A3
+  # !A4
+
+O5 =>
+    !B1
+  # A1
+
+O6 =>
+    B1
+  # !A1
+  # !A2
+
+O7 =>
+    !B2
+  # A1
+  # A2
+
+O8 =>
+    B1
+  # B2
+  # !A1
+
+O9 =>
+    B2
+  # !B3
+  # A2
+  # A3
+
+O10 =>
+    !B2
+  # B3
+  # B4
+  # A2
+
+O11 =>
+    !B2
+  # A2
+  # !A3
+  # !A4
+
+O12 =>
+    !B2
+  # !B3
+  # !A2
+  # A3
+
+O13 =>
+    B2
+  # !B3
+  # !B4
+  # A2
+  # A4
+
+O14 =>
+    B2
+  # !B4
+  # A2
+  # A3
+  # A4
+
+O15 =>
+    !B2
+  # B3
+  # A2
+  # !A3
+
+O16 =>
+    !B2
+  # B3
+  # A2
+  # !A4
+
+O17 =>
+    !B2
+  # B4
+  # A2
+  # !A3
+
+O18 =>
+    !B2
+  # !B3
+  # !B4
+  # !A2
+  # A4
+
+O19 =>
+    !B2
+  # !B4
+  # !A2
+  # A3
+  # A4
+
+Overlap =>
+    A3 & I1 & I2 & I3 & I4
+  # !A2 & A4 & I1 & I2 & I3 & I4
+  # !A2 & B2 & I1 & I2 & I3 & I4
+  # A2 & !B2 & I1 & I2 & I3 & I4
+  # A2 & !B3 & I1 & I2 & I3 & I4
+  # !A2 & !B4 & I1 & I2 & I3 & I4
+
+I1.oe  =>
+    1 
+
+I2.oe  =>
+    1 
+
+I3.oe  =>
+    1 
+
+I4.oe  =>
+    1 
+
+NotOverlap.oe  =>
+    1 
+
+Overlap.oe  =>
+    1 
+
+%END

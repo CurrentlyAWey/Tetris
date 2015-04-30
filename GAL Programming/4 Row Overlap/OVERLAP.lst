@@ -1,0 +1,87 @@
+LISTING FOR LOGIC DESCRIPTION FILE: OVERLAP.pld                      Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Mon Apr 27 12:16:26 2015
+
+  1:Name    Overlap;
+  2:Partno  01;
+  3:Date    4/24/2015;
+  4:Rev     01;
+  5:Designer        Arnold Wey;
+  6:Company         CU Later;
+  7:Assembly        None;
+  8:Location        None;
+  9:Device  g16v8;
+ 10:
+ 11:/**Inputs**/
+ 12:
+ 13:
+ 14:Pin 1 = A1;
+ 15:Pin 2 = A2;
+ 16:Pin 3 = A3;
+ 17:Pin 4 = A4;
+ 18:
+ 19:Pin 5 = B1;
+ 20:Pin 6 = B2;
+ 21:Pin 7 = B3;
+ 22:Pin 8 = B4;
+ 23:
+ 24:
+ 25:/**Outputs**/
+ 26:
+ 27:Pin 15 = I1;
+ 28:Pin 16 = I2;
+ 29:Pin 17 = I3;
+ 30:Pin 18 = I4;
+ 31:
+ 32:Pin 14 = Overlap;
+ 33:Pin 13 = NotOverlap;
+ 34:
+ 35:
+ 36:
+ 37:O0 = B2         #       B3              #       B4              #       !A2     ;
+ 38:O1 = B2         #       B3              #       !A2             #       !A4     ;
+ 39:O2 = B2         #       B3              #       !A2             #       !A3     ;
+ 40:O3 = B2         #       B4              #       !A2             #       !A3     ;
+ 41:O4 = B2         #       !A2             #       !A3             #       !A4     ;
+ 42:O5 = !B1        #       A1      ;
+ 43:O6 = B1         #       !A1             #       !A2     ;
+ 44:O7 = !B2        #       A1              #       A2      ;
+ 45:O8 = B1         #       B2              #       !A1     ;
+ 46:O9 = B2         #       !B3             #       A2              #       A3      ;
+ 47:O10 = !B2       #       B3              #       B4              #       A2      ;
+ 48:O11 = !B2       #       A2              #       !A3             #       !A4     ;
+ 49:O12 = !B2       #       !B3             #       !A2             #       A3      ;
+ 50:O13 = B2        #       !B3             #       !B4             #       A2              #       A4      ;
+ 51:O14 = B2        #       !B4             #       A2              #       A3              #       A4      ;
+ 52:O15 = !B2       #       B3              #       A2              #       !A3     ;
+ 53:O16 = !B2       #       B3              #       A2              #       !A4     ;
+
+LISTING FOR LOGIC DESCRIPTION FILE: OVERLAP.pld                      Page 2
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Mon Apr 27 12:16:26 2015
+
+ 54:O17 = !B2       #       B4              #       A2              #       !A3     ;
+ 55:O18 = !B2       #       !B3             #       !B4             #       !A2             #       A4      ;
+ 56:O19 = !B2       #       !B4             #       !A2             #       A3              #       A4      ;
+ 57:
+ 58:I1 = [O0, O1, O2, O3, O4, O10,O15]:&;
+ 59:I2 = [O5, O6, O7, O8, O9]:&;
+ 60:I3 = [O11,O13]:&;
+ 61:I4 = [O16,O17,O18,O19]:&;
+ 62:
+ 63:Overlap = [I1, I2, I3, I4,O14,O12]:&;
+ 64:NotOverlap = !Overlap;
+ 65:
+ 66:
+ 67:
+
+
+
+Jedec Fuse Checksum       (a2cf)
+Jedec Transmit Checksum   (a675)
