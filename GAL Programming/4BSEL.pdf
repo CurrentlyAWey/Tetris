@@ -1,11 +1,11 @@
-{COMPONENT E:\TETRIS\GAL PROGRAMMING\4 ROW OVERLAP\OVERLAP.SYM
+{COMPONENT F:\TETRIS\GAL PROGRAMMING\4BSEL.SYM
 
  {ENVIRONMENT
   {PDIFvrev 3.00}
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Thu Apr 30 02:13:17 2015 "}
+  {DBtime "Sat Apr 25 19:41:22 2015 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -33,28 +33,29 @@
  {SYMBOL
   {PIN_DEF
    [Ly "PINCON"]
-   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
-   {P A2 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
-   {P A3 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
-   {P A4 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
-   {P B1 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
-   {P B2 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
-   {P B3 {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
-   {P B4 {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
-   {P NOTOVERL {Pt "I/O"}{Lq 0}{Ploc 300 20}}
-   {P OVERLAP {Pt "I/O"}{Lq 0}{Ploc 300 40}}
-   {P I1 {Pt "I/O"}{Lq 0}{Ploc 300 60}}
-   {P I2 {Pt "I/O"}{Lq 0}{Ploc 300 80}}
-   {P I3 {Pt "I/O"}{Lq 0}{Ploc 300 100}}
-   {P I4 {Pt "I/O"}{Lq 0}{Ploc 300 120}}
+   {P ADD {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P A0 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A2 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A3 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P B0 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P B1 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P B2 {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P B3 {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P Y3 {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P Y2 {Pt "I/O"}{Lq 0}{Ploc 280 40}}
+   {P Y1 {Pt "I/O"}{Lq 0}{Ploc 280 60}}
+   {P Y0 {Pt "I/O"}{Lq 0}{Ploc 280 80}}
   }
 
   {PKG
    [Ly "REFDES"]
    [Ts 25][Tj "CB"][Tr 0][Tm "N"]
-   {Rdl 200 190}
+   {Rdl 190 230}
 
    [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 210}
    [Ts 15][Tj "RC"]
    {Pnl 120 170}
    {Pnl 120 150}
@@ -65,20 +66,20 @@
    {Pnl 120 50}
    {Pnl 120 30}
    [Ts 15][Tj "LC"]
-   {Pnl 280 30}
-   {Pnl 280 50}
-   {Pnl 280 70}
-   {Pnl 280 90}
-   {Pnl 280 110}
-   {Pnl 280 130}
+   {Pnl 260 30}
+   {Pnl 260 50}
+   {Pnl 260 70}
+   {Pnl 260 90}
 
-   {Sd A 1 2 3 4 5 6 7 8 13 14 15 16 17 18}
+   {Sd A 1 4 5 6 7 8 9 10 11 18 19 20 21}
   }
 
   {PIC
    [Ly "GATE"]
    [Ts 15][Tj "LC"][Tr 0][Tm "N"]
-   {R 130 180 270 0}
+   {R 130 220 250 0}
+   {L 130 200 100 200}
+   {L 130 210 140 200 130 190}
    {L 130 160 100 160}
    {L 130 140 100 140}
    {L 130 120 100 120}
@@ -87,32 +88,29 @@
    {L 130 60 100 60}
    {L 130 40 100 40}
    {L 130 20 100 20}
-   {L 270 20 300 20}
-   {L 270 40 300 40}
-   {L 270 60 300 60}
-   {L 270 80 300 80}
-   {L 270 100 300 100}
-   {L 270 120 300 120}
+   {L 250 20 280 20}
+   {L 250 40 280 40}
+   {L 250 60 280 60}
+   {L 250 80 280 80}
    [Ly "PINNAM"]
    [Tj "LC"]
-   {T "A1" 140 160}
-   {T "A2" 140 140}
-   {T "A3" 140 120}
-   {T "A4" 140 100}
-   {T "B1" 140 80}
-   {T "B2" 140 60}
-   {T "B3" 140 40}
-   {T "B4" 140 20}
+   {T "ADD" 140 200}
+   {T "A0" 140 160}
+   {T "A1" 140 140}
+   {T "A2" 140 120}
+   {T "A3" 140 100}
+   {T "B0" 140 80}
+   {T "B1" 140 60}
+   {T "B2" 140 40}
+   {T "B3" 140 20}
    [Tj "RC"]
-   {T "NOTOVERL" 260 20}
-   {T "OVERLAP" 260 40}
-   {T "I1" 260 60}
-   {T "I2" 260 80}
-   {T "I3" 260 100}
-   {T "I4" 260 120}
+   {T "Y3" 240 20}
+   {T "Y2" 240 40}
+   {T "Y1" 240 60}
+   {T "Y0" 240 80}
    [Ly "DEVICE"]
    [Tj "CT"]
-   {T "G16V8MA" 200 -10}
+   {T "G22V10" 190 -10}
   }
 
   {ATR
@@ -123,7 +121,7 @@
    {EX
     [Ly "ATTR2"]
     [Ts 12][Tj "CT"][Tr 0][Tm "N"]
-    {At PLD E:\TETRIS\GAL PROGRAMMING\4 ROW OVERLAP\OVERLAP 200 180}
+    {At PLD F:\TETRIS\GAL PROGRAMMING\4BSEL 190 220}
    }
   }
  }
@@ -133,13 +131,17 @@
   }
 
   {NET_DEF
+   {N ADD
+   }
+   {N A0
+   }
    {N A1
    }
    {N A2
    }
    {N A3
    }
-   {N A4
+   {N B0
    }
    {N B1
    }
@@ -147,19 +149,13 @@
    }
    {N B3
    }
-   {N B4
+   {N Y3
    }
-   {N NOTOVERL
+   {N Y2
    }
-   {N OVERLAP
+   {N Y1
    }
-   {N I1
-   }
-   {N I2
-   }
-   {N I3
-   }
-   {N I4
+   {N Y0
    }
   }
 

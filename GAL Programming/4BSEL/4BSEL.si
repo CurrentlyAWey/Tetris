@@ -1,14 +1,16 @@
-Name 4bSel;
-Partno 01;
-Date 4/15/2015;
-Rev 01;
+Name     4bSel;
+PartNo   01;
+Date     4/15/2015;
+Revision ;
 Designer Arnold Wey;
-Company CU Later;
+Company  CU Later;
 Assembly None;
 Location None;
-Device g22v10;
+Device   g22v10;
 
-ORDER:A0,ADD,B0,A1,B1,A2,B2,A3,B3,Y0,Y1,Y2,Y3;
+
+ORDER: A0, ADD, B0, A1, B1, A2, B2, A3, B3, Y0, Y1, Y2, Y3; 
+
 
 VECTORS:
 000000000LLLL

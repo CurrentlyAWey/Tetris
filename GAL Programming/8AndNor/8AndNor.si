@@ -1,14 +1,16 @@
-Name 8AndNor;
-Partno 01;
-Date 4/15/2015;
-Rev 01;
+Name     8AndNor;
+PartNo   01;
+Date     4/15/2015;
+Revision ;
 Designer Arnold Wey;
-Company CU Later;
+Company  CU Later;
 Assembly None;
 Location None;
-Device g16v8;
+Device   g16v8;
 
-ORDER:I7,I6,I5,I4,I3,I0,I1,I2,,AND,OR;
+
+ORDER: I7, I6, I5, I4, I3, I0, I1, I2, AND, OR; 
+
 
 VECTORS:
 00000000LL

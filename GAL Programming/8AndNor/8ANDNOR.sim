@@ -1,0 +1,47 @@
+%SIGNAL
+PIN  19 =  AND 
+PIN  11 =  I0 
+PIN  12 =  I1 
+PIN  13 =  I2 
+PIN   9 =  I3 
+PIN   8 =  I4 
+PIN   7 =  I5 
+PIN   6 =  I6 
+PIN   5 =  I7 
+PIN  14 =  O4 
+PIN  15 =  O5 
+PIN  16 =  O6 
+PIN  17 =  O7 
+PIN  18 = !OR 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+AND =>
+    I0 & I1 & I2 & I3 & I4 & I5 & I6 & I7
+
+O4 =>
+    I4
+
+O5 =>
+    I5
+
+O6 =>
+    I6
+
+O7 =>
+    I7
+
+OR =>
+    I0
+  # I1
+  # I2
+  # I3
+  # I4
+  # I5
+  # I6
+  # I7
+
+%END
