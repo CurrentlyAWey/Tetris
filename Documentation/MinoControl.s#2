@@ -5100,6 +5100,7 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="PE23" library="supply1" deviceset="PE" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="V+" device=""/>
+<part name="IC11" library="45xx" deviceset="4520" device="N"/>
 </parts>
 <sheets>
 <sheet>
@@ -5192,6 +5193,9 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="PE23" gate="M" x="205.74" y="200.66" smashed="yes" rot="MR90"/>
 <instance part="SUPPLY12" gate="1" x="205.74" y="160.02" smashed="yes" rot="R90"/>
 <instance part="SUPPLY13" gate="1" x="205.74" y="154.94" smashed="yes" rot="R90"/>
+<instance part="IC11" gate="A" x="220.98" y="134.62" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="228.6" y="124.46" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5553,12 +5557,44 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="167.64" y1="190.5" x2="208.28" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OVERLAP&amp;!FF1ST" class="0">
+<net name="!FF1ST" class="0">
 <segment>
-<pinref part="IC4" gate="A" pin="EN"/>
-<wire x1="187.96" y1="129.54" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="193.04" y="99.06" size="1.778" layer="95"/>
+<wire x1="233.68" y1="134.62" x2="256.54" y2="134.62" width="0.1524" layer="91"/>
+<label x="248.92" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="IC11" gate="A" pin="Q0"/>
+<wire x1="208.28" y1="137.16" x2="198.12" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="137.16" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="IC10" gate="G$1" pin="A1"/>
+<wire x1="198.12" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<junction x="208.28" y="137.16"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="IC11" gate="A" pin="Q1"/>
+<wire x1="208.28" y1="134.62" x2="195.58" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="134.62" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="IC10" gate="G$1" pin="A2"/>
+<wire x1="195.58" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
+<junction x="208.28" y="134.62"/>
+</segment>
+</net>
+<net name="FIELDCOUNTERCLK" class="0">
+<segment>
+<pinref part="IC11" gate="A" pin="CLK"/>
+<wire x1="233.68" y1="137.16" x2="256.54" y2="137.16" width="0.1524" layer="91"/>
+<label x="248.92" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!OVERLAP" class="0">
+<segment>
+<pinref part="IC11" gate="A" pin="RES"/>
+<wire x1="233.68" y1="129.54" x2="256.54" y2="129.54" width="0.1524" layer="91"/>
+<label x="248.92" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
