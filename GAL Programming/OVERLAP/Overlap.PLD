@@ -9,30 +9,22 @@ Location 	None;
 Device 	g16v8;
 
 /**Inputs**/
-
-
 Pin 1 = A1;
 Pin 2 = A2;
 Pin 3 = A3;
 Pin 4 = A4;
-
 Pin 5 = B1;
 Pin 6 = B2;
 Pin 7 = B3;
 Pin 8 = B4;
 
-
 /**Outputs**/
-
 Pin 15 = I1;
 Pin 16 = I2;
 Pin 17 = I3;
 Pin 18 = I4;
-
 Pin 14 = Overlap;
 Pin 13 = NotOverlap;
-
-
 
 O0 = B2		#	B3		#	B4		#	!A2	;
 O1 = B2		#	B3		#	!A2		#	!A4	;
@@ -55,11 +47,13 @@ O17 = !B2	#	B4		#	A2		#	!A3	;
 O18 = !B2	#	!B3		#	!B4		#	!A2		#	A4	;
 O19 = !B2	#	!B4		#	!A2		#	A3		#	A4	;
 
+/*Combining Terms*/
 I1 = [O0, O1, O2, O3, O4, O10,O15]:&;
 I2 = [O5, O6, O7, O8, O9]:&;
 I3 = [O11,O13]:&;
 I4 = [O16,O17,O18,O19]:&;
 
+/*Final Terms*/
 Overlap = [I1, I2, I3, I4,O14,O12]:&;
 NotOverlap = !Overlap;
 
