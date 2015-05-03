@@ -6727,7 +6727,6 @@ Source: http://download.cypress.com.edgesuite.net/design_resources/datasheets/co
 <segment>
 <pinref part="SR_TWO_1" gate="A" pin="Q0"/>
 <pinref part="8INANDOR" gate="G$1" pin="CLK"/>
-<wire x1="200.66" y1="127" x2="203.2" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC19" gate="A" pin="X0"/>
 <wire x1="203.2" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="127" x2="203.2" y2="127" width="0.1524" layer="91"/>
