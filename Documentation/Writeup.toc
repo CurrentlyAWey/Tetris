@@ -2,3 +2,4 @@
 \contentsline {section}{\numberline {2}Design Considerations}{4}
 \contentsline {section}{\numberline {3}Sample Code}{6}
 \contentsline {section}{\numberline {4}Tables}{12}
+\contentsline {section}{\numberline {5}Figures}{15}

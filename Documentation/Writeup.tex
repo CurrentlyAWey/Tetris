@@ -1,6 +1,7 @@
 \documentclass[letterpaper,titlepage,oneside]{article}
 \setlength\parindent{24pt}
 \usepackage{listings}
+\usepackage{graphicx}
 \usepackage{color}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -58,7 +59,8 @@ These solutions were devised through an iterative process which slowly decreased
 
 Tetris has been traditionally implemented on a 10x20 board, which was an awkward number of inputs to MUX, and required an extra chip for every part of the circuit that used MUXs, as well as 3 4-bit shift registers instead of 2. What made this factor even worse was the original implementation to display the board.
 
-Originally, the Tetromino would be loaded into a RAM separate from the RAM storing the FIELD. The outputs from the two RAMs would be time-domain MUXed to individual LEDs. Reducing the board to 8x16 brought the board count to 24. \\
+Originally, the Tetromino would be loaded into a RAM separate from the RAM storing the FIELD. The outputs from the two RAMs would be time-domain MUXed to individual LEDs. Reducing the board to 8x16 brought the board count to 24. 
+
 Then, we considered loading each shape into 4 8-bit Universal Shift Registers (8 4-bit SRs), which could be manipulated and fed into rotation matrices in order to manipulate the output. 
 
 While building, we realized that hard-coding the possible states of each row containing a Tetromino could fit inside the EEPROM, completely eliminating the need for the 4 shift registers storing each row that would handle shifting left and right, not to mention save the cost of Universal Shift Registers, which are quite costly. \\
@@ -350,6 +352,7 @@ VECTORS:
 \section{Tables}
 
 \subsection*{Overlap, Unminimized}
+\begin{center}
 \begin{table}['h']
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
@@ -385,8 +388,14 @@ VECTORS:
 \caption{Abbreviated}\label{table:OverLap_Unminimized}
 \end{table}
 
+
+\end{center}
+
+
 \pagebreak
 \subsection*{Overlap, Minimized}
+
+\begin{center}
 \begin{table}['h']
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-10}
@@ -422,9 +431,12 @@ VECTORS:
 \end{tabular}
 \caption{Overlap, Minimized}\label{table:Overlap_Minimized}
 \end{table}
-
+\end{center}
 \pagebreak
+
 \subsection*{4BSel, Unminimized}
+
+\begin{center}
 \begin{table}['h']
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-14}
@@ -441,66 +453,52 @@ VECTORS:
  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & L & L & H & L\\
  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & L & L & H & L\\
  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & L & L & H & H\\
- & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & L & L & H & H\\
- & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & L & L & H & L\\
- & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & L & L & H & L\\
- & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & L & L & H & H\\
- & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & L & L & H & H\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & L & L & L & L\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & L & L & L & L\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & L & L & L & H\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & L & L & L & H\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & L & L & L & L\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & L & L & L & L\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & L & L & L & H\\
- & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & L & L & L & H\\
  & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & %
 \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \\
-
 \cline{2-14}
 \end{tabular}
 \caption{Abbreviated}\label{table:4BSel_Unminimized}
 \end{table}
+\end{center}
 
-\pagebreak
-\subsection*{8AndNor, Unminimized}
+\subsection*{8AndOr, Unminimized}
+
+\begin{center}
 \begin{table}['h']
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
-& I7 & I6 & I5 & I4 & I3 & I0 & I1 & I2 & AND & OR & \\ 
+& I7 & I6 & I5 & I4 & I3 & I0 & I1 & I2 & AND & OR \\ 
 \cline{2-11}
 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & L & L  \\  
 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & L & H \\
 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & L & H \\
 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & L & H \\
 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & L & H \\
-& 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & L & H \\ 
-& 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & L & H \\ 
-& 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & L & H \\
-& 0 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & L & H \\
-& 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & L & H \\
-& 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & L & H \\ 
-& 0 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & L & H \\ 
-& 0 & 0 & 0 & 1 & 0 & 1 & 1 & 1 & L & H \\
-& 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & L & H \\
-& 0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & L & H \\
-& 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & L & H \\
-& 0 & 0 & 0 & 1 & 1 & 0 & 1 & 1 & L & H \\
-& 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & L & H \\
+& 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & L & H \\
 & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & %
 \ldots{} & \ldots{} & \ldots{} & \ldots{}\\
 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & L & H \\
 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & H & H \\
-
 \cline{2-11}
-
-
 \end{tabular}
-\caption{Abbreviated}\label{8AndNor_Unminimized}
+\caption{Abbreviated}\label{8AndOr_Unminimized}
 \end{table}
+\end{center}
 
 
+\pagebreak
 
+\section{Figures}
+
+\subsection*{Collision Logic.sch}
+\begin{center}
+\begin{figure}[hp]
+\centering
+\includegraphics[keepaspectratio=true]{Circuit Diagrams/Collision Logic.png}]{•}
+\caption{Collision Logic}
+\end{figure}
+
+\end{center}
 
 
 
