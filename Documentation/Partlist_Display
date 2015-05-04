@@ -1,0 +1,47 @@
+Partlist
+
+Exported from Display.sch at 5/4/15 4:11 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part            Value          Device        Package  Library     Sheet
+
+1/3HZ           LM555N         LM555N        DIL08    linear      1
+8INANDOR        ATF16V8BS      ATF16V8BS     SO20L    atmel       1
+9KHZ            LM555N         LM555N        DIL08    linear      1
+DECADE2OR5      4071D          4071D         SO14     40xx        1
+DECADECOUNTER   4017D          4017D         SO16     40xx        1
+FF_R/W(H=WRITE) 4027D          4027D         SO16     40xx        1
+IC8             4081D          4081D         SO14     40xx        1
+IC9             4027D          4027D         SO16     40xx        1
+IC10            4053D          4053D         SO16     40xx        1
+IC13            4001D          4001D         SO14     40xx        1
+IC15            4081D          4081D         SO14     40xx        1
+IC16            4053D          4053D         SO16     40xx        1
+IC17            4053D          4053D         SO16     40xx        1
+IC18            4053D          4053D         SO16     40xx        1
+IC20            4053D          4053D         SO16     40xx        1
+IC21            4053D          4053D         SO16     40xx        1
+IC22            4053D          4053D         SO16     40xx        1
+MUX_ADDRESS     4053D          4053D         SO16     40xx        1
+OR_DISPLAY_1    4071D          4071D         SO14     40xx        1
+OR_DISPLAY_2    4071D          4071D         SO14     40xx        1
+OVERLAPLOGIC    ATF16V8BS      ATF16V8BS     SO20L    atmel       1
+R4                             R-US_0204/7   0204/7   rcl         1
+R5                             R-US_0204/7   0204/7   rcl         1
+R6                             R-US_0204/7   0204/7   rcl         1
+R7                             R-US_0204/7   0204/7   rcl         1
+RAMADDRESS      4029D          4029D         SO16     40xx        1
+RAM_FIELD       CY62256LL-SNC  CY62256LL-SNC SOJ28/3  memory-sram 1
+REWRITE_MUX     4053D          4053D         SO16     40xx        1
+ROWBOTTOM       4029D          4029D         SO16     40xx        1
+SHIFT_DOWN_MUX  4053D          4053D         SO16     40xx        1
+SR_FOUR_1       4035D          4035D         SO16     40xx        1
+SR_FOUR_2       4035D          4035D         SO16     40xx        1
+SR_ONE_1        4035D          4035D         SO16     40xx        1
+SR_ONE_2        4035D          4035D         SO16     40xx        1
+SR_TWO_1        4035D          4035D         SO16     40xx        1
+SR_TWO_2        4035D          4035D         SO16     40xx        1
+STATE           4035D          4035D         SO16     40xx        1

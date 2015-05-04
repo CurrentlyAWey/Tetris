@@ -1,0 +1,15 @@
+Partlist exported from /home/arnold/Documents/ECE150/Tetris/Documentation/Circuit Diagrams/Collision Logic.sch at 5/4/15 4:24 AM
+
+Part         Value Device Package Description             
+8_OR         4048D 4048D  SO16    Expandable 8-input GATE 
+BOTTOM       4002D 4002D  SO14    4-input NOR             
+FF_1STCOLL   4027D 4027D  SO16    Dual JK FLIP FLOP       
+FF_COLLISION 4027D 4027D  SO16    Dual JK FLIP FLOP       
+IC1          4081D 4081D  SO14    Quad 2-input AND        
+IC2          4081D 4081D  SO14    Quad 2-input AND        
+IC3          4081D 4081D  SO14    Quad 2-input AND        
+IC4          4081D 4081D  SO14    Quad 2-input AND        
+IC5          4081D 4081D  SO14    Quad 2-input AND        
+IC8          4081D 4081D  SO14    Quad 2-input AND        
+IC9          4071D 4071D  SO14    Quad 2-input OR         
+NOTEMPTY     4048D 4048D  SO16    Expandable 8-input GATE 

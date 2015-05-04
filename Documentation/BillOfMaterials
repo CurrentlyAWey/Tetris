@@ -1,0 +1,23 @@
+
+
+
+
+&	Qty	&	Value	&	Description	&	\\
+&	1	&	4001D	&	Quad 2-input NOR	&	\\
+&	1	&	4002D	&	4-input NOR	&	\\
+&	1	&	4017D	&	COUNTER/DIVIDER	&	\\
+&	5	&	4027D	&	Dual JK FLIP FLOP	&	\\
+&	3	&	4029D	&	Binary/decimal up/down COUNTER	&	\\
+&	8	&	4035D	&	4-bit parallel in/out SHIFT REGISTER	&	\\
+&	2	&	4048D	&	Expandable 8-input GATE	&	\\
+&	10	&	4053D	&	Triple 2-channel ANALOG MULTIPLEXER	&	\\
+&	1	&	4069D	&	Hex INVERTER	&	\\
+&	4	&	4071D	&	Quad 2-input OR	&	\\
+&	9	&	4081D	&	Quad 2-input AND	&	\\
+&	3	&	4520N	&	Dual binary up COUNTER	&	\\
+&	2	&	ATF16V8BS	&	CMOS PLD	&	\\
+&	1	&	CY62256LL-SNC	&	256K (32K x 8) CMOS-Static RAM	&	\\
+&	3	&	LM555N	&	TIMER	&	\\
+&	1	&	2816	&	MEMORY	&	\\
+
+
