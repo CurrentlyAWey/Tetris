@@ -1,4 +1,6 @@
 \documentclass[letterpaper,titlepage,oneside]{article}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=1in}
 \setlength\parindent{24pt}
 \usepackage{listings}
 \usepackage{graphicx}
@@ -40,7 +42,6 @@
 \pagebreak
 \tableofcontents
 \pagebreak
-\pagestyle{headings}
 \section{Abstract}
 The objective of the project is a digital logic port of the 1984 game Tetris, which involves the manipulation of a falling shape in a vertical board. Key features of gameplay are the random generation of falling Tetrominoes, the ability to move the falling shape (henceforth referred to as "Mino") left, right, and rotate it, and the deletion of full lines. 
 
@@ -357,8 +358,9 @@ VECTORS:
 \section{Tables}
 
 \subsection*{Overlap, Unminimized}
-\begin{center}
+
 \begin{table}['h']
+\begin{center}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
 
@@ -391,10 +393,11 @@ VECTORS:
 \cline{2-11}
 \end{tabular}
 \caption{Abbreviated}\label{table:OverLap_Unminimized}
+
+\end{center}
 \end{table}
 
 
-\end{center}
 
 
 \pagebreak
@@ -467,20 +470,15 @@ VECTORS:
 \cline{2-14}
 \end{tabular}
 \caption{Abbreviated: }\label{table:4BSel_Unminimized}
-
-\begin{small}
+\begin{normalsize}
 $Y_{n} = (A_{n} \,\&\, !ADD) \,+\, (B_{n} \,\&\, ADD)$
-
-\end{small}
-
+\end{normalsize}
 \end{center}
 \end{table}
 
-
 \subsection*{8AndOr, Unminimized}
-
-\begin{center}
 \begin{table}['h']
+\begin{center}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
 & I7 & I6 & I5 & I4 & I3 & I0 & I1 & I2 & AND & OR \\ 
@@ -498,8 +496,13 @@ $Y_{n} = (A_{n} \,\&\, !ADD) \,+\, (B_{n} \,\&\, ADD)$
 \cline{2-11}
 \end{tabular}
 \caption{Abbreviated}\label{8AndOr_Unminimized}
-\end{table}
+\begin{normalsize}
+$AND \,=\, \sum_{i=0}^{7} I_{i} $
+\\[5pt]
+$OR \, = \, \prod_{i=0}^{7} I_{i}$
+\end{normalsize}
 \end{center}
+\end{table}
 
 
 \pagebreak
@@ -507,35 +510,30 @@ $Y_{n} = (A_{n} \,\&\, !ADD) \,+\, (B_{n} \,\&\, ADD)$
 \section{Figures}
 
 
-\begin{center}
 \begin{figure}[hp]
-\centering
-\includegraphics[width = 0.8\textwidth]{Circuit Diagrams/Collision Logic.png}
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{"Circuit Diagrams/Collision Logic".png}
 \caption{Collision Logic}
 \label{fig:Collision}
-\end{figure}
 \end{center}
+\end{figure}
 
-\begin{center}
+
 \begin{figure}[h]
-\centering
-\includegraphics[width = 0.8\textwidth]{Circuit Diagrams/MinoControl.png}
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{"Circuit Diagrams/MinoControl".png}
 \caption{Mino Control Logic}
 \label{fig:Mino Control}
-\end{figure}
 \end{center}
+\end{figure}
 
-\begin{center}
 \begin{figure}[hp]
-\includegraphics[angle = 90,width = 1\textwidth]{Circuit Diagrams/Display.png}
+\begin{center}
+\includegraphics[angle = 90,width = 1\textwidth]{"Circuit Diagrams/Display".png}
 \caption{Display Logic}
 \label{fig:Display}
-\end{figure}
 \end{center}
-
-
-
-
+\end{figure}
 
 
 
