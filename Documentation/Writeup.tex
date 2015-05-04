@@ -67,7 +67,7 @@ While building, we realized that hard-coding the possible states of each row con
 This brought the total board count to around 18, but required writing 1024 unique rows
 
 The need to manually write 1024 bytes prompted an investigation in automating the process. There's no simple way to handle rotation, so\\
-$ 4 rows * 8 shapes * 4 orientations = 128 rows$
+$ 4 \,rows\, *\, 8\, shapes\, *\, 4 \,orientations \,=\, 128\, rows$
 were written manually into input.txt
 
 shapeTest.c prints out all the possible offsets of each shape's orientations, read from input.txt. The stdout from shapeTest is redirected into Swag.txt. The debugging output is manually cleaned up, and used as input to bintext2bin.\\
@@ -88,12 +88,12 @@ A few more boards were saved by implementing Truth Table~\ref{table:OverLap_Unmi
  into a GAL chip, Overlap.
  
 That Truth Table simplifies into Truth Table~\ref{table:Overlap_Minimized} on page~\pageref{table:Overlap_Minimized}, and results in the following Equivalent Expression:\\[5pt]
-$Overlap=(B2+B3+B4+!A2)*(B2+B3+!A2+!A4)*(B2+B3+!A2+!A3)*\\
-(B2+B4+!A2+!A3)*(B2+!A2+!A3+!A4)*(!B1+A1)*(B1+!A1+!A2)*\\
-(!B2+A1+A2)*(B1+B2+!A1)*(B2+!B3+A2+A3)*(!B2+B3+B4+A2)*\\
-*(!B2+A2+!A3+!A4)*(!B2+!B3+!A2+A3)*(B2+!B3+!B4+A2+A4)*\\
-(B2+!B4+A2+A3+A4)*(!B2+B3+A2+!A3)*(!B2+B3+A2+!A4)*\\
-(!B2+B4+A2+!A3)*(!B2+!B3+!B4+!A2+A4)*(!B2+!B4+!A2+A3+A4)$\\
+$Overlap\,=(B_{2}+B_{3}+B4+!A_{2})*(B_{2}+B_{3}+!A_{2}+!A4)*(B_{2}+B_{3}+!A_{2}+!A_{3})*\\
+(B_{2}+B4+!A_{2}+!A_{3})*(B_{2}+!A_{2}+!A_{3}+!A4)*(!B_{1}+A_{1})*(B_{1}+!A_{1}+!A_{2})*\\
+(!B_{2}+A_{1}+A_{2})*(B_{1}+B_{2}+!A_{1})*(B_{2}+!B_{3}+A_{2}+A_{3})*(!B_{2}+B_{3}+B4+A_{2})*\\
+*(!B_{2}+A_{2}+!A_{3}+!A4)*(!B_{2}+!B_{3}+!A_{2}+A_{3})*(B_{2}+!B_{3}+!B4+A_{2}+A4)*\\
+(B_{2}+!B4+A_{2}+A_{3}+A4)*(!B_{2}+B_{3}+A_{2}+!A_{3})*(!B_{2}+B_{3}+A_{2}+!A4)*\\
+(!B_{2}+B4+A_{2}+!A_{3})*(!B_{2}+!B_{3}+!B4+!A_{2}+A4)*(!B_{2}+!B4+!A_{2}+A_{3}+A4)$\\
 
 This had few enough product terms to fit onto a GAL16v8, and upon securing approval, we programmed the chip using WinCUPL and the ChipMaster 6000 graciously provided to us by the Cooper Union Electrical Engineering Department.
 
@@ -132,36 +132,40 @@ Pin 17 = I3;
 Pin 18 = I4;
 Pin 14 = Overlap;
 Pin 13 = NotOverlap;
-O0 = B2#B3#B4#!A2;
-O1 = B2#B3#!A2#!A4;
-O2 = B2#B3#!A2#!A3;
-O3 = B2#B4#!A2#!A3;
-O4 = B2#!A2#!A3#!A4;
-O5 = !B1#A1;
-O6 = B1#!A1#!A2;
-O7 = !B2#A1#A2;
-O8 = B1#B2#!A1;
-O9 = B2#!B3#A2#A3;
-O10 = !B2#B3#B4#A2;
-O11 = !B2#A2#!A3#!A4;
-O12 = !B2#!B3#!A2#A3;
-O13 = B2#!B3#!B4#A2#A4;
-O14 = B2#!B4#A2#A3#A4;
-O15 = !B2#B3#A2#!A3;
-O16 = !B2#B3#A2#!A4;
-O17 = !B2#B4#A2#!A3;
-O18 = !B2#!B3#!B4#!A2#A4;
-O19 = !B2#!B4#!A2#A3#A4;
+
+O0 = B2   # B3    # B4    # !A2 ;
+O1 = B2   # B3    # !A2   # !A4 ;
+O2 = B2   # B3    # !A2   # !A3 ;
+O3 = B2   # B4    # !A2   # !A3 ;
+O4 = B2   # !A2   # !A3   # !A4 ;
+O5 = !B1  # A1  ;
+O6 = B1   # !A1   # !A2 ;
+O7 = !B2  # A1    # A2  ;
+O8 = B1   # B2    # !A1 ;
+O9 = B2   # !B3   # A2    # A3  ;
+O10 = !B2 # B3    # B4    # A2  ;
+O11 = !B2 # A2    # !A3   # !A4 ;
+O12 = !B2 # !B3   # !A2   # A3  ;
+O13 = B2  # !B3   # !B4   # A2    # A4  ;
+O14 = B2  # !B4   # A2    # A3    # A4  ;
+O15 = !B2 # B3    # A2    # !A3 ;
+O16 = !B2 # B3    # A2    # !A4 ;
+O17 = !B2 # B4    # A2    # !A3 ;
+O18 = !B2 # !B3   # !B4   # !A2   # A4  ;
+O19 = !B2 # !B4   # !A2   # A3    # A4  ;
 
 /*Combining Terms*/
-I1 = [O0, O1, O2, O3, O4, O10,O15]: & ;
-I2 = [O5, O6, O7, O8, O9]: & ;
-I3 = [O11,O13]: & ;
-I4 = [O16,O17,O18,O19]: & ;
+I1 = [O0, O1, O2, O3, O4, O10,O15]:&;
+I2 = [O5, O6, O7, O8, O9]:&;
+I3 = [O11,O13]:&;
+I4 = [O16,O17,O18,O19]:&;
 
 /*Final Terms*/
-Overlap = [I1, I2, I3, I4,O14,O12]: & ;
+Overlap = [I1, I2, I3, I4,O14,O12]:&;
 NotOverlap = !Overlap;
+
+
+
 \end{lstlisting}
 
 \subsection*{Overlap.SI}
@@ -195,10 +199,11 @@ VECTORS:
 \end{lstlisting}
 
 \pagebreak
-\subsection*{8AndNor.PLD}
-\label{code: 8AndNor}
+\subsection*{8AndOr.PLD}
+\label{code: 8AndOr}
 \begin{lstlisting}
-Name 4bSel;
+
+Name 8AndOr;
 Partno 01;
 Date 4/15/2015;
 Rev 01;
@@ -206,34 +211,33 @@ Designer Arnold Wey;
 Company CU Later;
 Assembly None;
 Location None;
-Device g22v10;
-
+Device g16v8;
 /**Inputs**/
-Pin 1 = ADD;
 
-Pin 4 = A0;
-Pin 5 = A1;
-Pin 6 = A2;
-Pin 7 = A3;
-Pin 8 = B0;
-Pin 9 = B1;
-Pin 10 = B2;
-Pin 11 = B3;
+Pin 5 = I7;
+Pin 6 = I6;
+Pin 7 = I5;
+Pin 8 = I4;
+Pin 9 = I3;
+Pin 11 = I0;
+Pin 12 = I1;
+Pin 13 = I2;
 
 /**Outputs**/
-Pin 18 = Y3;
-Pin 19 = Y2;
-Pin 20 = Y1;
-Pin 21 = Y0;
+Pin 14 = O4;
+Pin 15 = O5;
+Pin 16 = O6;
+Pin 17 = O7;
+Pin 18 = OR;
+Pin 19 = AND;
+AND = [I7, I6, I5, I4, I3, I0, I1, I2]:&;
+OR = [I7, I6, I5, I4, I3, I0, I1, I2]:#;
+O4 = I4;
+O5 = I5;
+O6 = I6;
+O7 = I7;
 
-Y0 = A0  &  !ADD;
-APPEND Y0 = B0  &  ADD;
-Y1 = A1  &  !ADD;
-APPEND Y1 = B1  &  ADD;
-Y2 = A2  &  !ADD;
-APPEND Y2 = B2  &  ADD;
-Y3 = A3  &  !ADD;
-APPEND Y3 = B3  &  ADD;
+
 \end{lstlisting}
 \pagebreak
 \paragraph*{8AndNor.SI}
@@ -301,14 +305,15 @@ Pin 19 = Y2;
 Pin 20 = Y1;
 Pin 21 = Y0;
 
-Y0 = A0  &  !ADD;
-APPEND Y0 = B0  &  ADD;
-Y1 = A1  &  !ADD;
-APPEND Y1 = B1  &  ADD;
-Y2 = A2  &  !ADD;
-APPEND Y2 = B2  &  ADD;
-Y3 = A3  &  !ADD;
-APPEND Y3 = B3  &  ADD;
+Y0 = A0 & !ADD;
+APPEND Y0 = B0 & ADD;
+Y1 = A1 & !ADD;
+APPEND Y1 = B1 & ADD;
+Y2 = A2 & !ADD;
+APPEND Y2 = B2 & ADD;
+Y3 = A3 & !ADD;
+APPEND Y3 = B3 & ADD;
+
 \end{lstlisting}
 \pagebreak
 \paragraph*{4BSel.SI}
@@ -393,10 +398,11 @@ VECTORS:
 
 
 \pagebreak
-\subsection*{Overlap, Minimized}
 
-\begin{center}
+\subsection*{Overlap, Minimized}
 \begin{table}['h']
+\begin{center}
+
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-10}
  & A1 & A2 & A3 & A4 & B1 & B2 & B3 & B4 & Overlap &  \\ \cline{2-10}
@@ -429,15 +435,18 @@ VECTORS:
  & 0 & 1 & X & 1 & 0 & 1 & 0 & 1 & 1 &  \\
 \cline{2-10}
 \end{tabular}
-\caption{Overlap, Minimized}\label{table:Overlap_Minimized}
-\end{table}
-\end{center}
-\pagebreak
 
+\caption{Abbreviated}\label{table:OverLap_Minimized}
+
+\end{center}
+\end{table}
+
+\pagebreak
 \subsection*{4BSel, Unminimized}
 
-\begin{center}
 \begin{table}['h']
+\begin{center}
+
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-14}
  & A0 & ADD & B0 & A1 & B1 & A2 & B2 & A3 & B3 & Y0 & Y1 & Y2 & Y3 &  \\ \cline{2-14}
@@ -454,12 +463,19 @@ VECTORS:
  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & L & L & H & L\\
  & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & L & L & H & H\\
  & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & %
-\ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \\
+\ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} &\\
 \cline{2-14}
 \end{tabular}
-\caption{Abbreviated}\label{table:4BSel_Unminimized}
-\end{table}
+\caption{Abbreviated: }\label{table:4BSel_Unminimized}
+
+\begin{small}
+$Y_{n} = (A_{n} \,\&\, !ADD) \,+\, (B_{n} \,\&\, ADD)$
+
+\end{small}
+
 \end{center}
+\end{table}
+
 
 \subsection*{8AndOr, Unminimized}
 
@@ -490,15 +506,36 @@ VECTORS:
 
 \section{Figures}
 
-\subsection*{Collision Logic.sch}
+
 \begin{center}
 \begin{figure}[hp]
 \centering
-\includegraphics[keepaspectratio=true]{Circuit Diagrams/Collision Logic.png}]{•}
+\includegraphics[width = 0.8\textwidth]{Circuit Diagrams/Collision Logic.png}
 \caption{Collision Logic}
+\label{fig:Collision}
 \end{figure}
-
 \end{center}
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width = 0.8\textwidth]{Circuit Diagrams/MinoControl.png}
+\caption{Mino Control Logic}
+\label{fig:Mino Control}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}[hp]
+\includegraphics[angle = 90,width = 1\textwidth]{Circuit Diagrams/Display.png}
+\caption{Display Logic}
+\label{fig:Display}
+\end{figure}
+\end{center}
+
+
+
+
 
 
 

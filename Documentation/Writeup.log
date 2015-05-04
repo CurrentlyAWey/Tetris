@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  3 MAY 2015 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  3 MAY 2015 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -180,59 +180,96 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 70.
  [4]
+
+LaTeX Warning: Reference `table:Overlap_Minimized' on page 5 undefined on input
+ line 90.
+
+
+LaTeX Warning: Reference `table:Overlap_Minimized' on page 5 undefined on input
+ line 90.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
 [5] [6] [7] [8] [9] [10] [11] [12] [13]
-Overfull \hbox (16.94446pt too wide) in paragraph at lines 441--460
-[][] 
+Overfull \hbox (17.77776pt too wide) in paragraph at lines 450--469
+ [] 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 472.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 472.
 [14]
 
 LaTeX Warning: File `Circuit Diagrams/Collision Logic.png' not found on input l
-ine 497.
+ine 513.
 
-<Circuit Diagrams/Collision Logic.png, id=54, 544.6749pt x 333.8874pt>
+<Circuit Diagrams/Collision Logic.png, id=58, 581.89395pt x 290.5254pt>
 File: Circuit Diagrams/Collision Logic.png Graphic file (type png)
 
 <use Circuit Diagrams/Collision Logic.png>
 Package pdftex.def Info: Circuit Diagrams/Collision Logic.png used on input lin
-e 497.
-(pdftex.def)             Requested size: 544.67355pt x 333.88658pt.
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ¢ in font cmr10!
+e 513.
+(pdftex.def)             Requested size: 276.00105pt x 137.8015pt.
 
-Overfull \hbox (202.45134pt too wide) in paragraph at lines 497--498
- []\OT1/cmr/m/n/10 ] 
- []
 
-[15 <./Circuit Diagrams/Collision Logic.png>] (./Writeup.aux)
+LaTeX Warning: File `Circuit Diagrams/MinoControl.png' not found on input line 
+522.
+
+<Circuit Diagrams/MinoControl.png, id=59, 479.27055pt x 330.9966pt>
+File: Circuit Diagrams/MinoControl.png Graphic file (type png)
+
+<use Circuit Diagrams/MinoControl.png>
+Package pdftex.def Info: Circuit Diagrams/MinoControl.png used on input line 52
+2.
+(pdftex.def)             Requested size: 276.00105pt x 190.61954pt.
+
+
+LaTeX Warning: File `Circuit Diagrams/Display.png' not found on input line 530.
+
+
+<Circuit Diagrams/Display.png, id=60, 2208.25pt x 1706.375pt>
+File: Circuit Diagrams/Display.png Graphic file (type png)
+
+<use Circuit Diagrams/Display.png>
+Package pdftex.def Info: Circuit Diagrams/Display.png used on input line 530.
+(pdftex.def)             Requested size: 2208.24463pt x 1706.37085pt.
+ [15 <./Circuit Diagrams/Collision Logic.png> <./Circuit Diagrams/MinoControl.p
+ng>] [16 <./Circuit Diagrams/Display.png>]
+(./Writeup.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2903 strings out of 494985
- 41582 string characters out of 6180357
- 152918 words of memory out of 5000000
- 6112 multiletter control sequences out of 15000+600000
- 5977 words of font info for 22 fonts, out of 8000000 for 9000
+ 2931 strings out of 494985
+ 42090 string characters out of 6180357
+ 192918 words of memory out of 5000000
+ 6135 multiletter control sequences out of 15000+600000
+ 7501 words of font info for 27 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,8n,40p,490b,1585s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,40p,490b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Writeup.pdf (15 pages, 242323 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t9.pfb>
+Output written on Writeup.pdf (16 pages, 552770 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
