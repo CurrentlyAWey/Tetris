@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  4 MAY 2015 09:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  7 MAY 2015 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,24 +54,44 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen111
+\lightrulewidth=\dimen112
+\cmidrulewidth=\dimen113
+\belowrulesep=\dimen114
+\belowbottomsep=\dimen115
+\aboverulesep=\dimen116
+\abovetopsep=\dimen117
+\cmidrulesep=\dimen118
+\cmidrulekern=\dimen119
+\defaultaddspace=\dimen120
+\@cmidla=\count90
+\@cmidlb=\count91
+\@aboverulesep=\dimen121
+\@belowrulesep=\dimen122
+\@thisruleclass=\count92
+\@lastruleclass=\count93
+\@thisrulewidth=\dimen123
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count90
+\lst@mode=\count94
 \lst@gtempboxa=\box26
 \lst@token=\toks16
-\lst@length=\count91
-\lst@currlwidth=\dimen111
-\lst@column=\count92
-\lst@pos=\count93
-\lst@lostspace=\dimen112
-\lst@width=\dimen113
-\lst@newlines=\count94
-\lst@lineno=\count95
-\lst@maxwidth=\dimen114
+\lst@length=\count95
+\lst@currlwidth=\dimen124
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen125
+\lst@width=\dimen126
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen127
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-\c@lstnumber=\count96
-\lst@skipnumbers=\count97
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
 \lst@framebox=\box27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -102,10 +122,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count98
+\Gread@gobject=\count102
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -118,23 +138,103 @@ Package color Info: Driver file: pdftex.def on input line 130.
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen130
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count103
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count104
+\leftroot@=\count105
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count106
+\DOTSCASE@=\count107
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen132
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count108
+\c@MaxMatrixCols=\count109
+\dotsspace@=\muskip10
+\c@parentequation=\count110
+\dspbrk@lvl=\count111
+\tag@help=\toks18
+\row@=\count112
+\column@=\count113
+\maxfields@=\count114
+\andhelp@=\toks19
+\eqnshift@=\dimen133
+\alignsep@=\dimen134
+\tagshift@=\dimen135
+\tagwidth@=\dimen136
+\totwidth@=\dimen137
+\lineht@=\dimen138
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 ) (./Writeup.aux)
 \openout1 = `Writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -169,20 +269,20 @@ LaTeX Font Info:    ... okay on input line 30.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count99
+\c@lstlisting=\count115
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen117
-\scratchbox=\box28
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen118
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count116
+\scratchdimen=\dimen139
+\scratchbox=\box30
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen140
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -229,39 +329,50 @@ e
 ))
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Writeup.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
+
+]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+ [2
+
+] (./Writeup.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write3
 \openout3 = `Writeup.toc'.
 
- [2]
-[3]
+ [3
 
-LaTeX Warning: Reference `table:Overlap_Minimized' on page 4 undefined on input
- line 87.
+] [1] [2
+
+]
+
+LaTeX Warning: Reference `table:Overlap_Minimized' on page 3 undefined on input
+ line 120.
 
 
-LaTeX Warning: Reference `table:Overlap_Minimized' on page 4 undefined on input
- line 87.
+LaTeX Warning: Reference `table:Overlap_Minimized' on page 3 undefined on input
+ line 120.
 
+[3] [4
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+] [5] [6
 
- []
+] [7] [8] [9] [10] [11] [12
 
-[4]
+] [13
 
-LaTeX Warning: Reference `table:Clock' on page 5 undefined on input line 97.
-
-[5
-
-] [6
-
-] [7] [8] [9] [10] [11]
+] [14] [15] [16]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -274,66 +385,83 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12
 
-] [13] [14]
-<"Circuit Diagrams/Collision Logic".png, id=57, 581.89395pt x 290.5254pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17
+
+] [18] [19] [20]
+<"Circuit Diagrams/Collision Logic".png, id=92, 581.89395pt x 290.5254pt>
 File: "Circuit Diagrams/Collision Logic".png Graphic file (type png)
 
 <use "Circuit Diagrams/Collision Logic".png>
 Package pdftex.def Info: "Circuit Diagrams/Collision Logic".png used on input l
-ine 544.
+ine 900.
 (pdftex.def)             Requested size: 375.80544pt x 187.63347pt.
 
-<"Circuit Diagrams/MinoControl".png, id=58, 479.27055pt x 330.9966pt>
+<"Circuit Diagrams/MinoControl".png, id=93, 479.27055pt x 330.9966pt>
 File: "Circuit Diagrams/MinoControl".png Graphic file (type png)
 
 <use "Circuit Diagrams/MinoControl".png>
 Package pdftex.def Info: "Circuit Diagrams/MinoControl".png used on input line 
-552.
+908.
 (pdftex.def)             Requested size: 375.80544pt x 259.55005pt.
 
-<"Circuit Diagrams/Display".pdf, id=59, 794.97pt x 614.295pt>
+<"Circuit Diagrams/Display".pdf, id=94, 794.97pt x 614.295pt>
 File: "Circuit Diagrams/Display".pdf Graphic file (type pdf)
 
 <use "Circuit Diagrams/Display".pdf>
-Package pdftex.def Info: "Circuit Diagrams/Display".pdf used on input line 560.
+Package pdftex.def Info: "Circuit Diagrams/Display".pdf used on input line 916.
 
 (pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15
+<"FunctionalBlockParty".png, id=95, 1641.13126pt x 1081.03876pt>
+File: "FunctionalBlockParty".png Graphic file (type png)
+
+<use "FunctionalBlockParty".png>
+Package pdftex.def Info: "FunctionalBlockParty".png used on input line 924.
+(pdftex.def)             Requested size: 1641.12726pt x 1081.03612pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21
 
  <./Circuit Diagrams/Collision Logic.png> <./Circuit Diagrams/MinoControl.png>]
- [16 <./Circuit Diagrams/Display.pdf>] (./Writeup.aux)
+ [22 <./Circuit Diagrams/Display.pdf>] [23 <./FunctionalBlockParty.png>]
+(./Writeup.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3418 strings out of 494985
- 49420 string characters out of 6180357
- 216962 words of memory out of 5000000
- 6610 multiletter control sequences out of 15000+600000
- 5970 words of font info for 22 fonts, out of 8000000 for 9000
+ 4498 strings out of 494985
+ 61713 string characters out of 6180357
+ 228677 words of memory out of 5000000
+ 7638 multiletter control sequences out of 15000+600000
+ 10817 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,8n,40p,579b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,40p,532b,1561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt9.pfb>
-Output written on Writeup.pdf (16 pages, 479784 bytes).
+t/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Writeup.pdf (27 pages, 762980 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 163 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
