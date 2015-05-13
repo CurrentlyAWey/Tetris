@@ -14,7 +14,7 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
 \lstset{frame=tb,
-  language=Java,
+  language=C,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
@@ -34,15 +34,15 @@
 \begin{center}
 \section*{THE COOPER UNION \\FOR THE ADVANCEMENT OF SCIENCE AND ART\\[35pt]}
 \section*{A Practical Method for the Implementation of \\Cascading Tetrominoes with Digital Logic\\[35pt]}
-\subsection*{Arnold Wey, EE '18 \\[15pt]-\&-\\[15pt] Camilo Gaitan, CE '18\\[75pt]}
+\subsection*{Arnold Wey, EE '18 \\[15pt]-\&-\\[15pt] Camilo Andr\'es Gait\'an Parra, CE '18\\[75pt]}
 \subsection*{A thesis submitted in partial fulfillment of the requirements for the degree of Bachelor of Engineering\\[75pt]}
 \subsubsection*{May 13, 2015\\[60pt]}
 \subsubsection*{Professor Jared Harwayne-Gidansky\\[5pt]Thesis Advisor}
 \end{center}
 \clearpage
-\pagenumbering{roman}
 
-\section{TO DO}
+
+\section*{TO DO}
 Define stuff, like Tetrominoes
 Introduction
 Pictures ( Big, Labeled, Functional Blocks)
@@ -53,34 +53,37 @@ Make note of Abbreviations (Remove them)
 
 
 \section*{Abstract}
-The objective of the project is a digital logic port of the 1984 game Tetris, which involves the manipulation of a falling shape in a vertical board. Key features of gameplay are the random generation of falling Tetrominoes, the ability to move the falling shape (henceforth referred to as ``Mino'') left, right, and rotate it, and the deletion of full lines. 
+The objective of the project is a digital logic port of the 1984 game Tetris, which involves the manipulation of a falling shape in a vertical board. Key features of gameplay are the random generation of falling Tetrominoes, the ability to move the falling shape (henceforth referred to as ``Mino'') left, right, and rotate it. Minos are written into the Field upon collision, and full lines are cleared to allow space for continued gameplay. 
 
-The project demonstrates the basic functionality of Tetris. Additional safeguards could be implemented but weren't defined in the project specs, such as Left/Right collision detection, wall collision detection, increased falling speed as the game progresses, and scoring system.
+The project demonstrates the basic functionality of Tetris. Additional safeguards could be implemented but weren't defined in the project specs, such as wall collision detection, increased falling speed as the game progresses, and the implementation of a scoring system.
 \clearpage
 
 \section*{Acknowledgements}
 We cannot express enough thanks to the Electrical Engineering Faculty for their continued support and 
-encouragement:  Professor Fred Fontaine, Electrical Engineering Chair; Professor Toby Cumberbatch; Professor Sam Keene; Professor Carl Sable; and Professor Stuart Kirtman, along with Dino Melendez for being endless sources of knowledge and enlightenment. We offer our sincere appreciation for the learning opportunities and facilities provided by The Cooper Union. 
+encouragement:  Professor Fred Fontaine, Electrical Engineering Chair; Professor Toby Cumberbatch; Professor Sam Keene; Professor Carl Sable; and Professor Stuart Kirtman, along with Dino Melendez for being eternal fountains of knowledge and enlightenment. We offer our sincere appreciation for the learning opportunities and facilities provided by The Cooper Union. 
 
 Our completion of this project could not have been accomplished without the advice of the Electrical Engineering upperclassmen: Chris Curro, Howie Chen, Stephen Leone, Justin Alexander, Neema Aggarwal, and Venkat Kuruturi. Their help with WinCUPL, oscilloscopes, .bin file manipulation, and debugging was essential. 
 
-To Yuliya Koshkina –thank you for allowing me time away from you to put wires into holes. [Insert Romantic Shit, Camilo]  
+To Yuliya Koshkina –thank you for allowing me time away from you to insert my wires into other holes. [Insert Romantic Shit, Camilo]  
 
-Thanks to our parents as well, Gwodonq Wey, Bihyueh Chen Wey, [Camilo's mam\'a y pap\'a]. The opportunities you gave us through your own sacrifices are boundless, along with our appreciation for everything you still do.
+Thanks to our parents as well, Gwodonq Wey, Bihyueh Chen Wey, Orlando Fajarda, \'y Rosemary Parra. The opportunities you gave us through your own sacrifices are boundless, along with our appreciation for everything you still do.
 
-Finally, to our sarcastic, tyrannical, tough-love professor, Jared Harwayne-Gidansky: our deepest gratitude. Your encouragement when the times got rough are much appreciated and duly noted. It was a great comfort and relief to know that you cared for our well-being and learning experience. \\[5pt]
+Finally, to our sarcastic, tyrannical, tough-love professor, Jared Harwayne-Gidansky: our deepest gratitude. Your encouragement when the times got rough are much appreciated and duly noted. It was a great comfort and relief to know that you care for our well-being and learning experience. \\[5pt]
 You have our heartfelt thanks.
 \clearpage
+\pagenumbering{roman}
 \tableofcontents
 \pagebreak
 \pagenumbering{arabic}
 \section{Introduction}
+Tetris is a classic game which has seen implementation in almost every video game console and operating system, as well as on devices such as graphing calculators, mobile phones, portable media players, PDAs, Network music players and even as an Easter egg on non-media products like oscilloscopes. However, to our knowledge there has not been a successful implementation on Tetris in digital logic. Our objective is to port Tetris to digital logic, which involves the manipulation of a falling shape in a vertical board. Key features of gameplay are the random generation of falling Tetrominoes, the ability to move the falling shape (henceforth referred to as ``Mino'') left, right, and rotate it. Minos are written into the Field upon collision, and full lines are cleared to allow space for continued gameplay. 
 
+The project demonstrates the basic functionality of Tetris. Additional safeguards could be implemented but weren't defined in the project specs, such as wall collision detection, increased falling speed as the game progresses, and the implementation of a scoring system.
 \clearpage
 \section{Design Considerations}
 
 \subsection{Overview}
-Tetrominoes are hard coded into an EEPROM, which is addressed by counters controlled by buttons. Random shapes are generated by a 3-bit RNG.
+Tetrominoes are hard coded into an EEPROM, which is addressed by counters controlled by buttons. Random shapes are generated by a 3-bit PRNG.
 
 The Field is rendered row-by-row from the bottom up, while processing each row and checking for a full row, an empty row, and selecting either the current row or the next row to write into RAM. The bottom row of the mino, RowBottom, corresponds to its location in the board and is compared with the current row being processed. This comparison, carried out by Overlap, determines whether to enable the output of the corresponding row from the EEPROM. RowBottom is maintained by a 3-bit down counter.
 
@@ -704,6 +707,7 @@ int main()
 
 \begin{table}[h!]
 \begin{center}
+\caption{Overlap Unminimized, Abbreviated}\label{table:OverLap_Unminimized}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
 
@@ -735,7 +739,6 @@ int main()
 
 \cline{2-11}
 \end{tabular}
-\caption{Overlap Unminimized, Abbreviated}\label{table:OverLap_Unminimized}
 
 \end{center}
 \end{table}
@@ -743,6 +746,7 @@ int main()
 \begin{table}[h!]
 \begin{center}
 
+\caption{Overlap Minimized}\label{table:OverLap_Minimized}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-10}
  & A1 & A2 & A3 & A4 & B1 & B2 & B3 & B4 & Overlap &  \\ \cline{2-10}
@@ -776,7 +780,6 @@ int main()
 \cline{2-10}
 \end{tabular}
 
-\caption{Overlap Minimized}\label{table:OverLap_Minimized}
 
 \end{center}
 \end{table}
@@ -784,6 +787,7 @@ int main()
 \begin{table}[h!]
 \begin{center}
 
+\caption{4BSel Unminimized, Abbreviated: }\label{table:4BSel_Unminimized}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-14}
  & A0 & ADD & B0 & A1 & B1 & A2 & B2 & A3 & B3 & Y0 & Y1 & Y2 & Y3 &  \\ \cline{2-14}
@@ -803,12 +807,12 @@ int main()
 \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} & \ldots{} &\\
 \cline{2-14}
 \end{tabular}
-\caption{4BSel Unminimized, Abbreviated: }\label{table:4BSel_Unminimized}
 \end{center}
 \end{table}
 
 \begin{table}[h!]
 \begin{center}
+\caption{8 Input And \& Or, Abbreviated: }\label{8AndOr_Unminimized}
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c}
 \cline{2-11}
 & I7 & I6 & I5 & I4 & I3 & I0 & I1 & I2 & AND & OR \\ 
@@ -825,12 +829,12 @@ int main()
 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & H & H \\
 \cline{2-11}
 \end{tabular}
-\caption{8 Input And \& Or, Abbreviated: }\label{8AndOr_Unminimized}
 \end{center}
 \end{table}
 
 \begin{table}[h!]
 \begin{center}
+\caption{Bill Of Materials}\label{BOM}
 \begin{tabular}{c|c|c|c|c}
 \cline{2-4}
 &	Qty	&	Value	&	Description	&	\\
@@ -855,13 +859,14 @@ int main()
 
 \end{tabular}
 \end{center}
-\caption{Bill Of Materials}\label{BOM}
 \end{table}
 
 \begin{table}[h!]
 
 \begin{center}
-\begin{tabular}{c|c}
+
+\caption{Decade Counter Sequence}\label{table:Clock}
+\begin{tabular}{|c|c|}
 
 \hline 
 \rule[-1ex]{0pt}{2.5ex} Step & Action \\ 
@@ -889,7 +894,7 @@ int main()
 
 
 \end{tabular} 
-\end{center}\caption{Decade Counter Sequence}\label{table:Clock}
+\end{center}
 \end{table}
 
 

@@ -1,0 +1,38 @@
+Name 	Overlap;
+Partno 	01;
+Date 	4/24/2015;
+Rev 	01;
+Designer 	Arnold Wey;
+Company 	CU Later;
+Assembly 	None;
+Location 	None;
+Device 	g16v8;
+
+/**Inputs**/
+Pin 1 = A1;
+Pin 2 = A2;
+Pin 3 = A3;
+Pin 4 = A4;
+Pin 5 = B1;
+Pin 6 = B2;
+Pin 7 = B3;
+Pin 8 = B4;
+
+/**Outputs**/
+Pin 15 = I1;
+Pin 16 = I2;
+Pin 17 = I3;
+Pin 18 = I4;
+Pin 14 = Overlap;
+Pin 13 = NotOverlap;
+
+F0 = ((B4 & A4') & (A3' # B3) # (B3 & A3')) 
+F1 = ((B1' & B2 & A1 & A2') # ((B2' & A2 ) & (B1' A1' # B1 A1))) 
+F2 = (B3' & (A4 # B4') # (A3 & (A4 # B4' # B3')));
+F3 = # ((B2' & A2') # (B2 & A2)) & ((B1' & A1') # (B1 & A1)) 
+
+
+/*Final Terms*/
+Overlap = [I1, I2, I3, I4,O14,O12]:&;
+NotOverlap = !Overlap;
+
